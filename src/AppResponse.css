@@ -1,0 +1,298 @@
+@media only screen and (max-width: 1024px) {
+  :root {
+    --collection-cards-per-row: 2;
+    --artists-card-per-row: 2;
+    --nft-cards-per-row: 2;
+  }
+  .container {
+    width: 690px;
+  }
+  form {
+    width: 100%;
+  }
+  .foot form input[type="email"] {
+    height: 46px;
+    margin-bottom: 10px;
+  }
+  .foot form button {
+    position: relative;
+    padding: 10px 70px;
+  }
+  .heading h3 {
+    font-size: 28px;
+  }
+  .heading p {
+    font-size: 16px;
+  }
+  .headline .heading {
+    width: 340px;
+  }
+  nav {
+    height: 58px;
+  }
+  .logo img:first-of-type {
+    width: 24px;
+    height: 24px;
+  }
+  .logo img:last-of-type {
+    height: 15px;
+  }
+  .menu {
+    display: none;
+  }
+  #menu_icon {
+    display: block;
+    cursor: pointer;
+  }
+  .hero_text h1 {
+    font-size: 38px;
+    margin-bottom: 20px;
+  }
+  .hero_text p {
+    font-size: 16px;
+  }
+  .hero_text .btn {
+    margin: 20px 0;
+  }
+  .additional_info {
+    gap: 30px;
+  }
+  .additional_info li {
+    font-size: 22px;
+  }
+  .additional_info li span {
+    font-size: 16px;
+  }
+  .artists_card {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+  }
+  .artists_card_avatar {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 0;
+  }
+  .artists_card_avatar img {
+    width: 100%;
+  }
+  .artists_card_about {
+    text-align: left;
+  }
+  .no_artist {
+    top: -7px;
+    left: -10px;
+  }
+  .category_card_image {
+    height: 142px;
+  }
+  .category_card_text h5 {
+    font-size: 16px;
+  }
+  .nft_artist_name_btn h1 {
+    font-size: 38px;
+  }
+  .info_card img {
+    width: 150px;
+    height: 150px;
+  }
+  .info_card h5 {
+    font-size: 16px;
+  }
+  .info_card p {
+    font-size: 12px;
+  }
+  .subscribe_widget_frame h1 {
+    font-size: 28px;
+  }
+  .subscribe_widget_frame p {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  .subscribe_widget_div > img {
+    height: 247px;
+  }
+  .foot {
+    flex-direction: column;
+  }
+  .foot button {
+    position: absolute;
+    padding: 14px 50px;
+  }
+  #mailFormBTN {
+    position: absolute;
+    width: 100%;
+    top: 50px;
+    height: 45px;
+  }
+  #mailFormINPUT {
+    height: 45px;
+    margin-bottom: 30px;
+  }
+  .create form label {
+    height: 46px;
+  }
+  .create form input[type="email"] {
+    height: 18px;
+    margin-bottom: 0;
+  }
+  .artist_absolute_img {
+    bottom: 40px;
+  }
+  .artist_info_wallet {
+    display: none;
+  }
+  .artist_info_wallet.mobile {
+    margin-top: 15px;
+    display: flex;
+    gap: 10px;
+  }
+  .artist_info_wallet.mobile .btn {
+    padding: 5px;
+  }
+  .ranking_tr .artist_card {
+    display: block;
+  }
+  .ranking_tr .artist_card h2 {
+    font-size: 18px;
+  }
+  .ranking_tr img {
+    margin: 4px 0;
+  }
+  .ranking .mobile {
+    display: none;
+  }
+  .ranking td {
+    padding: 0 10px;
+  }
+  .ranking_tr td:first-of-type span {
+    width: 18px;
+    height: 18px;
+  }
+  .frame_nav.rankings_page li {
+    font-size: 18px;
+  }
+  .connect-wallet,
+  .create-account {
+    margin: 15px 0;
+  }
+  .btns,
+  .create form {
+    margin: 20px 0;
+  }
+  .head_c h1 {
+    font-size: 38px;
+  }
+  .head_c p {
+    font-size: 18px;
+    line-height: 25.2px;
+  }
+  .c_btn {
+    margin-top: 5px;
+    font-size: 18px;
+  }
+  .c_btn img {
+    width: 25px;
+    height: 25px;
+  }
+  .modal-container {
+    height: 100%;
+  }
+}
+@media only screen and (max-width: 832px) {
+  :root {
+    --hero-per-row: 1;
+    --collection-cards-per-row: 1;
+    --artists-card-per-row: 1;
+    --nft-cards-per-row: 1;
+    --category-card-per-row: 2;
+    --subscribe-per-row: 1;
+    --card-per-row: 1;
+  }
+  .container {
+    width: 315px;
+    margin: 0 auto;
+  }
+  .hero_text h1 {
+    font-size: 28px;
+  }
+  .hero_gif {
+    display: none;
+  }
+  .hero_gif.mobile_version {
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+  }
+  .hero_text .btn {
+    padding: 12px 90px;
+  }
+
+  .additional_info {
+    justify-content: space-between;
+  }
+  .artists_card_row {
+    display: none;
+  }
+  .artists_card_row.mobile_version {
+    display: flex;
+  }
+  .headline_button {
+    width: 100%;
+    display: inline-block;
+  }
+  .headline_button .btn.headline_btn {
+    margin-top: 15px;
+    padding: 12px 80px;
+  }
+  .nft_cards_row.mobile_version {
+    display: flex;
+  }
+  .auction_time_div {
+    display: none;
+  }
+  .auction_time_div.mobile_version {
+    display: flex;
+  }
+  .info_card {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .info_card img {
+    width: 100px;
+    height: 100px;
+  }
+  form {
+    width: 230px;
+  }
+  .foot button {
+    position: static;
+    padding: 14px 90px;
+  }
+  #mailFormBTN {
+    width: 230px;
+  }
+  #mailFormINPUT {
+    width: 230px;
+  }
+  .connect-wallet,
+  .create-account {
+    display: inline-block;
+    margin-bottom: -4px;
+  }
+  .create,
+  .connect {
+    width: 100%;
+  }
+  .image_flex {
+    width: 100%;
+  }
+  .btn {
+    width: 300px;
+  }
+  .tags_list{
+    gap:10px;
+  }
+}

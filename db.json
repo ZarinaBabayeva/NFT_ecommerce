@@ -1,0 +1,1170 @@
+{
+  "artists": [
+    {
+      "id": 100,
+      "userName": "Animakid",
+      "avatar": "https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/avatar-placeholder-137@2x.png",
+      "eth": 34.53,
+      "volume": 250246,
+      "followers": 3012,
+      "solds": 52,
+      "bio": "The Internet's Friendliest Designer Kid.",
+      "walletAddress": "0xc0E3fdknsd987zbdfg7hsd3skcm009"
+    },
+    {
+      "id": 101,
+      "userName": "Keepitreal",
+      "avatar": "https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/avatar-placeholder-98@2x.png",
+      "eth": 35.42,
+      "volume": 302450,
+      "followers": 3542,
+      "solds": 68,
+      "bio": "The Internet's Friendliest Designer Kid.",
+      "walletAddress": "0xc0E3fdknsd987zbdfg7hsd3skcm005"
+    },
+    {
+      "id": 102,
+      "userName": "Digilab",
+      "avatar": "https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/avatar-placeholder-99@2x.png",
+      "eth": 24.72,
+      "volume": 125450,
+      "followers": 1272,
+      "solds": 32,
+      "bio": "The Internet's Friendliest Designer Kid.",
+      "walletAddress": "0xc0E3fdknsd987zbdfg7hsd3skcm004"
+    },
+    {
+      "id": 103,
+      "userName": "Gravityone",
+      "avatar": "https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/avatar-placeholder-100@2x.png",
+      "eth": 42.03,
+      "volume": 400450,
+      "followers": 51180,
+      "solds": 85,
+      "bio": "The Internet's Friendliest Designer Kid.",
+      "walletAddress": "0xc0E3fdknsd987zbdfg7hsd3skcm709"
+    },
+    {
+      "id": 104,
+      "userName": "Juanie",
+      "avatar": "https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/avatar-placeholder-101@2x.png",
+      "eth": 12.03,
+      "volume": 12450,
+      "followers": 1080,
+      "solds": 12,
+      "bio": "The Internet's Friendliest Designer Kid.",
+      "walletAddress": "0xc0E3fdknsd987zbdfg7hsd3skcmv59"
+    },
+    {
+      "id": 105,
+      "userName": "Bluewhale",
+      "avatar": "https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/avatar-placeholder-102@2x.png",
+      "eth": 34.63,
+      "volume": 265450,
+      "followers": 3080,
+      "solds": 60,
+      "bio": "The Internet's Friendliest Designer Kid.",
+      "walletAddress": "0xc0E3fdknsd987zbdfg7hsd3skcn7809"
+    },
+    {
+      "id": 106,
+      "userName": "Mr Fox",
+      "avatar": "https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/avatar-placeholder-1@2x.png",
+      "eth": 31.2,
+      "volume": 245450,
+      "followers": 3180,
+      "solds": 52,
+      "bio": "The Internet's Friendliest Designer Kid.",
+      "walletAddress": "0xc0E3fdknsd987zbdfg7hsd3dskcm009"
+    },
+    {
+      "id": 107,
+      "userName": "Shroomie",
+      "avatar": "https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/avatar-placeholder-103@2x.png",
+      "eth": 40.12,
+      "volume": 272450,
+      "followers": 3580,
+      "solds": 55,
+      "bio": "The Internet's Friendliest Designer Kid.",
+      "walletAddress": "0xc0E3fdknsd987zb78fg7hsd3skcm009"
+    },
+    {
+      "id": 108,
+      "userName": "Robotica",
+      "avatar": "https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/avatar-placeholder-104@2x.png",
+      "eth": 30.25,
+      "volume": 184450,
+      "followers": 3001,
+      "solds": 53,
+      "bio": "The Internet's Friendliest Designer Kid.",
+      "walletAddress": "0xc0E3fdknsd987zbdfg7hsd3sk45009"
+    },
+    {
+      "id": 109,
+      "userName": "Rustyrobot",
+      "avatar": "https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/avatar-placeholder-105@2x.png",
+      "eth": 13.57,
+      "volume": 6450,
+      "followers": 1201,
+      "solds": 17,
+      "bio": "The Internet's Friendliest Designer Kid.",
+      "walletAddress": "0xc0E3fdknsd987zbdfg0hsd3skcm009"
+    },
+    {
+      "id": 110,
+      "userName": "Dotgu",
+      "avatar": "https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/avatar-placeholder-107@2x.png",
+      "eth": 25.17,
+      "volume": 14450,
+      "followers": 2201,
+      "solds": 34,
+      "bio": "The Internet's Friendliest Designer Kid.",
+      "walletAddress": "0xc0E3fdknsd987zbjfg7hsd3skcm009"
+    },
+    {
+      "id": 111,
+      "userName": "Ghiblier",
+      "avatar": "https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/avatar-placeholder-108@2x.png",
+      "eth": 28.17,
+      "volume": 15450,
+      "followers": 2251,
+      "solds": 39,
+      "bio": "The Internet's Friendliest Designer Kid.",
+      "walletAddress": "0xc0E3fdk012sd987zbdfg7hsd3skcm009"
+    },
+    {
+      "id": 112,
+      "userName": "BeKind2Robots",
+      "avatar": "https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/avatar-placeholder-54@2x.png",
+      "eth": 25.17,
+      "volume": 12450,
+      "followers": 2351,
+      "solds": 33,
+      "bio": "The Internet's Friendliest Designer Kid.",
+      "walletAddress": "0xc0E3fdknsd987zbdfg7hsd3sk7m009"
+    },
+    {
+      "id": 113,
+      "userName": "MoonDancer",
+      "avatar": "https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/avatar-placeholder-59@2x.png",
+      "eth": 32.02,
+      "volume": 184450,
+      "followers": 2255,
+      "solds": 24,
+      "bio": "The Internet's Friendliest Designer Kid.",
+      "walletAddress": "0xc0E3fdknsd987zbdfg7hsd365cm009"
+    },
+    {
+      "id": 114,
+      "userName": "NebulaKid",
+      "avatar": "https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/avatar-placeholder-20@2x.png",
+      "eth": 35.02,
+      "volume": 184652,
+      "followers": 2155,
+      "solds": 27,
+      "bio": "The Internet's Friendliest Designer Kid.",
+      "walletAddress": "0xc0E3f0knsd987zbdfg7hsd3skcm009"
+    },
+    {
+      "id": 115,
+      "userName": "Spaceone",
+      "avatar": "https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/avatar-placeholder-57@2x.png",
+      "eth": 21.92,
+      "volume": 124652,
+      "followers": 1255,
+      "solds": 15,
+      "bio": "The Internet's Friendliest Designer Kid.",
+      "walletAddress": "0xc0E3fd78sd987zbdfg7hsd3skcm009"
+    }
+  ],
+  "collections": [
+    {
+      "id": 1,
+      "title": "Dsgn Animals",
+      "images": [
+        "https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/primary-photo-placeholder-1@2x.png",
+        "https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/secondary-photo-placeholder@2x.png",
+        "https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/secondary-photo-placeholder-1@2x.png",
+        "https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/secondary-photo-placeholder@2x.png",
+        "https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/secondary-photo-placeholder-1@2x.png",
+        "https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/secondary-photo-placeholder@2x.png",
+        "https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/secondary-photo-placeholder-1@2x.png",
+        "https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/secondary-photo-placeholder@2x.png",
+        "https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/secondary-photo-placeholder-1@2x.png",
+        "https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/secondary-photo-placeholder@2x.png",
+        "https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/secondary-photo-placeholder-1@2x.png",
+        "https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/secondary-photo-placeholder@2x.png",
+        "https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/secondary-photo-placeholder-1@2x.png"
+      ],
+      "artistID": 100
+    },
+    {
+      "id": 2,
+      "title": "Magic Mushrooms",
+      "images": [
+        "https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/primary-photo-placeholder@2x.png",
+        "https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/secondary-photo-placeholder-2@2x.png",
+        "https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/secondary-photo-placeholder-3@2x.png",
+        "https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/secondary-photo-placeholder-2@2x.png",
+        "https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/secondary-photo-placeholder-3@2x.png",
+        "https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/secondary-photo-placeholder-2@2x.png",
+        "https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/secondary-photo-placeholder-3@2x.png",
+        "https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/secondary-photo-placeholder-2@2x.png",
+        "https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/secondary-photo-placeholder-3@2x.png",
+        "https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/secondary-photo-placeholder-3@2x.png",
+        "https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/secondary-photo-placeholder-2@2x.png",
+        "https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/secondary-photo-placeholder-3@2x.png",
+        "https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/secondary-photo-placeholder-3@2x.png",
+        "https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/secondary-photo-placeholder-2@2x.png",
+        "https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/secondary-photo-placeholder-3@2x.png",
+        "https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/secondary-photo-placeholder-3@2x.png",
+        "https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/secondary-photo-placeholder-2@2x.png",
+        "https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/secondary-photo-placeholder-3@2x.png"
+      ],
+      "artistID": 107
+    },
+    {
+      "id": 3,
+      "title": "Disco Machines",
+      "images": [
+        "https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/primary-photo-placeholder-5@2x.png",
+        "https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/secondary-photo-placeholder-10@2x.png",
+        "https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/secondary-photo-placeholder-11@2x.png",
+        "https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/secondary-photo-placeholder-10@2x.png",
+        "https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/secondary-photo-placeholder-11@2x.png",
+        "https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/secondary-photo-placeholder-10@2x.png",
+        "https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/secondary-photo-placeholder-11@2x.png",
+        "https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/secondary-photo-placeholder-10@2x.png",
+        "https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/secondary-photo-placeholder-11@2x.png",
+        "https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/secondary-photo-placeholder-10@2x.png",
+        "https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/secondary-photo-placeholder-11@2x.png"
+      ],
+      "artistID": 112
+    }
+  ],
+  "auctions": [
+    {
+      "id": 1001,
+      "image": "https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/nft-highlight@1x.png",
+      "collectionID": 2,
+      "artistID": 107,
+      "nftID": 2,
+      "endDate": "05-10-2023 12:45:06"
+    },
+    {
+      "id": 1002,
+      "image": "https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/nft-highlight@1x.png",
+      "collectionID": 2,
+      "artistID": 100,
+      "nftID": 1,
+      "endDate": "05-09-2023 18:45:45"
+    },
+    {
+      "id": 1003,
+      "image": "https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/nft-highlight@1x.png",
+      "collectionID": 2,
+      "artistID": 101,
+      "nftID": 4,
+      "endDate": "05-09-2023 18:45:45"
+    },
+    {
+      "id": 1004,
+      "image": "https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/nft-highlight@1x.png",
+      "collectionID": 2,
+      "artistID": 102,
+      "nftID": 5,
+      "endDate": "05-01-2023 18:45:45"
+    },
+    {
+      "id": 1005,
+      "image": "https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/nft-highlight@1x.png",
+      "collectionID": 2,
+      "artistID": 103,
+      "nftID": 6,
+      "endDate": "05-02-2023 14:45:45"
+    },
+    {
+      "id": 1006,
+      "image": "https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/nft-highlight@1x.png",
+      "collectionID": 2,
+      "artistID": 104,
+      "nftID": 7,
+      "endDate": "05-01-2023 00:45:45"
+    },
+    {
+      "id": 1007,
+      "image": "https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/nft-highlight@1x.png",
+      "collectionID": 2,
+      "artistID": 105,
+      "nftID": 8,
+      "endDate": "05-02-2023 16:45:45"
+    },
+    {
+      "id": 1008,
+      "image": "https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/nft-highlight@1x.png",
+      "collectionID": 2,
+      "artistID": 106,
+      "nftID": 9,
+      "endDate": "04-21-2023 16:45:45"
+    },
+    {
+      "id": 1009,
+      "image": "https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/nft-highlight@1x.png",
+      "collectionID": 2,
+      "artistID": 107,
+      "nftID": 10,
+      "endDate": "04-21-2023 12:00:00"
+    },
+    {
+      "id": 1010,
+      "image": "https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/nft-highlight@1x.png",
+      "collectionID": 2,
+      "artistID": 108,
+      "nftID": 11,
+      "endDate": "04-22-2023 00:00:00"
+    },
+    {
+      "id": 1011,
+      "image": "https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/nft-highlight@1x.png",
+      "collectionID": 2,
+      "artistID": 109,
+      "nftID": 12,
+      "endDate": "04-21-2023 00:00:00"
+    },
+    {
+      "id": 1012,
+      "image": "https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/nft-highlight@1x.png",
+      "collectionID": 2,
+      "artistID": 110,
+      "nftID": 13,
+      "endDate": "04-30-2023 00:00:00"
+    },
+    {
+      "id": 1013,
+      "image": "https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/nft-highlight@1x.png",
+      "collectionID": 2,
+      "artistID": 111,
+      "nftID": 14,
+      "endDate": "04-27-2023 18:45:45"
+    },
+    {
+      "id": 1014,
+      "image": "https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/nft-highlight@1x.png",
+      "collectionID": 2,
+      "artistID": 112,
+      "nftID": 15,
+      "endDate": "05-10-2023 04:45:45"
+    },
+    {
+      "id": 1015,
+      "image": "https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/nft-highlight@1x.png",
+      "collectionID": 2,
+      "artistID": 113,
+      "nftID": 16,
+      "endDate": "05-09-2023 18:30:45"
+    },
+    {
+      "id": 1016,
+      "image": "https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/nft-highlight@1x.png",
+      "collectionID": 2,
+      "artistID": 114,
+      "nftID": 20,
+      "endDate": "05-09-2023 18:45:38"
+    },
+    {
+      "id": 1017,
+      "image": "https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/nft-highlight@1x.png",
+      "collectionID": 2,
+      "artistID": 115,
+      "nftID": 23,
+      "endDate": "06-09-2023 16:45:45"
+    }
+  ],
+  "categories": [
+    {
+      "title": "Art",
+      "bcground": "https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/image-placeholder-54@2x.png",
+      "icon": "https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/paintbrush-1@2x.svg"
+    },
+    {
+      "title": "Collectibles",
+      "bcground": "https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/image-placeholder-55@2x.png",
+      "icon": "https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/swatches-1@2x.svg"
+    },
+    {
+      "title": "Music",
+      "bcground": "https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/image-placeholder-56@2x.png",
+      "icon": "https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/musicnotes-1@2x.svg"
+    },
+    {
+      "title": "Photography",
+      "bcground": "https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/image-placeholder-57@2x.png",
+      "icon": "https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/camera-1@2x.svg"
+    },
+    {
+      "title": "Video",
+      "bcground": "https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/image-placeholder-58@2x.png",
+      "icon": "https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/videocamera-1@2x.svg"
+    },
+    {
+      "title": "Utility",
+      "bcground": "https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/image-placeholder-59@2x.png",
+      "icon": "https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/magicwand-1@2x.svg"
+    },
+    {
+      "title": "Sport",
+      "bcground": "https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/image-placeholder-60@2x.png",
+      "icon": "https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/basketball-1@2x.svg"
+    },
+    {
+      "title": "Virtual Worlds",
+      "bcground": "https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/image-placeholder-61@2x.png",
+      "icon": "https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/planet-1@2x.svg"
+    }
+  ],
+  "nfts": [
+    {
+      "id": 1,
+      "artistID": 100,
+      "name": "Distant Galaxy",
+      "addTime": "Sep 30, 2022",
+      "category": "Virtual Worlds",
+      "price": 1.63,
+      "highestBid": 0.33,
+      "image": "https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/image-placeholder-62@2x.png"
+    },
+    {
+      "id": 11,
+      "artistID": 110,
+      "name": "Space Travel",
+      "addTime": "Sep 30, 2022",
+      "category": "Art",
+      "price": 1.59,
+      "highestBid": 0.49,
+      "image": "https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/image-placeholder-70@2x.png"
+    },
+    {
+      "id": 2,
+      "artistID": 103,
+      "name": "Life On Edena",
+      "addTime": "Sep 30, 2022",
+      "category": "Music",
+      "price": 1.73,
+      "highestBid": 0.3,
+      "image": "https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/image-placeholder-63@2x.png"
+    },
+    
+    {
+      "id": 59,
+      "artistID": 115,
+      "name": "Roco 454",
+      "addTime": "Sep 04, 2021",
+      "category": "Art",
+      "price": 1.07,
+      "highestBid": 0.37,
+      "image": "https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/image-placeholder-66@2x.png"
+    },
+    {
+      "id": 8,
+      "artistID": 107,
+      "name": "Colorful Dog 0356",
+      "addTime": "Oct 30, 2022",
+      "category": "Art",
+      "price": 1.13,
+      "highestBid": 0.32,
+      "image": "https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/image-placeholder-67@2x.png"
+    },
+    {
+      "id": 9,
+      "artistID": 108,
+      "name": "Dancing Robot 0312",
+      "addTime": "Sep 30, 2022",
+      "category": "Art",
+      "price": 0.99,
+      "highestBid": 0.42,
+      "image": "https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/image-placeholder-68@2x.png"
+    },
+    {
+      "id": 10,
+      "artistID": 107,
+      "name": "Cherry Blossom Girl 035",
+      "addTime": "Jun 20, 2022",
+      "category": "Art",
+      "price": 1.99,
+      "highestBid": 0.62,
+      "image": "https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/image-placeholder-69@2x.png"
+    },{
+      "id": 74,
+      "artistID": 107,
+      "name": "Desert Walk",
+      "addTime": "Nov 13, 2021",
+      "category": "Art",
+      "price": 1.55,
+      "highestBid": 0.49,
+      "image": "https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/image-placeholder-71@2x.png"
+    },
+    {
+      "id": 14,
+      "artistID": 113,
+      "name": "Icecream Ape 0324",
+      "addTime": "Sep 30, 2022",
+      "category": "Art",
+      "price": 1.35,
+      "highestBid": 0.39,
+      "image": "https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/image-placeholder-72@2x.png"
+    },
+    {
+      "id": 7,
+      "artistID": 106,
+      "name": "Designer Bear",
+      "addTime": "Sep 30, 2022",
+      "category": "Art",
+      "price": 1.57,
+      "highestBid": 0.57,
+      "image": "https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/image-placeholder-1@2x.png"
+    },
+    {
+      "id": 61,
+      "artistID": 100,
+      "name": "Colorful Dog 0344",
+      "addTime": "Jan 01, 2023",
+      "category": "Art",
+      "price": 1.22,
+      "highestBid": 0.24,
+      "image": "https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/image-placeholder-73@2x.png"
+    },
+    {
+      "id": 34,
+      "artistID": 107,
+      "name": "Astion",
+      "addTime": "Sep 30, 2022",
+      "category": "Sport",
+      "price": 1.93,
+      "highestBid": 0.48,
+      "image": "https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/image-placeholder-64@2x.png"
+    },
+    {
+      "id": 47,
+      "artistID": 101,
+      "name": "Happy Robot 092",
+      "addTime": "Dec 05, 2022",
+      "category": "Art",
+      "price": 1.44,
+      "highestBid": 0.47,
+      "image": "https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/image-placeholder-65@2x.png"
+    },
+    {
+      "id": 75,
+      "artistID": 111,
+      "name": "Sunset Dimension",
+      "addTime": "Sep 30, 2022",
+      "category": "Art",
+      "price": 1.59,
+      "highestBid": 0.49,
+      "image": "https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/image-placeholder-2@2x.png"
+    },
+    {
+      "id": 76,
+      "artistID": 107,
+      "name": "Desert Walk",
+      "addTime": "Nov 13, 2021",
+      "category": "Art",
+      "price": 1.55,
+      "highestBid": 0.49,
+      "image": "https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/image-placeholder-71@2x.png"
+    },
+    {
+      "id": 21,
+      "artistID": 112,
+      "name": "Distant Galaxy",
+      "addTime": "Sep 30, 2022",
+      "category": "Virtual Wls",
+      "price": 1.63,
+      "highestBid": 0.33,
+      "image": "https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/image-placeholder-62@2x.png"
+    },
+    {
+      "id": 22,
+      "artistID": 113,
+      "name": "Distant Galaxy",
+      "addTime": "Sep 30, 2022",
+      "category": "Virtual Worlds",
+      "price": 1.63,
+      "highestBid": 0.33,
+      "image": "https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/image-placeholder-62@2x.png"
+    },
+    {
+      "id": 75,
+      "artistID": 107,
+      "name": "Desert Walk",
+      "addTime": "Nov 13, 2021",
+      "category": "Art",
+      "price": 1.55,
+      "highestBid": 0.49,
+      "image": "https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/image-placeholder-71@2x.png"
+    },
+    {
+      "id": 23,
+      "artistID": 113,
+      "name": "Edena",
+      "addTime": "Sep 30, 2022",
+      "category": "Music",
+      "price": 1.73,
+      "highestBid": 0.3,
+      "image": "https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/image-placeholder-63@2x.png"
+    },
+    {
+      "id": 24,
+      "artistID": 101,
+      "name": "Lina",
+      "addTime": "Sep 30, 2022",
+      "category": "Music",
+      "price": 1.73,
+      "highestBid": 0.3,
+      "image": "https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/image-placeholder-63@2x.png"
+    },
+    {
+      "id": 25,
+      "artistID": 102,
+      "name": "Life",
+      "addTime": "Sep 30, 2022",
+      "category": "Music",
+      "price": 1.73,
+      "highestBid": 0.3,
+      "image": "https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/image-placeholder-63@2x.png"
+    },
+    {
+      "id": 26,
+      "artistID": 100,
+      "name": "Lifena",
+      "addTime": "Sep 30, 2022",
+      "category": "Music",
+      "price": 1.73,
+      "highestBid": 0.3,
+      "image": "https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/image-placeholder-63@2x.png"
+    },
+    {
+      "id": 16,
+      "artistID": 107,
+      "name": "Distant Galaxy",
+      "addTime": "Sep 30, 2022",
+      "category": "Virtual World",
+      "price": 1.63,
+      "highestBid": 0.33,
+      "image": "https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/image-placeholder-62@2x.png"
+    },
+    {
+      "id": 27,
+      "artistID": 115,
+      "name": "Life Edena",
+      "addTime": "Sep 30, 2022",
+      "category": "Music",
+      "price": 1.73,
+      "highestBid": 0.3,
+      "image": "https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/image-placeholder-63@2x.png"
+    },
+    {
+      "id": 28,
+      "artistID": 112,
+      "name": "Life On World",
+      "addTime": "Sep 30, 2022",
+      "category": "Music",
+      "price": 1.73,
+      "highestBid": 0.3,
+      "image": "https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/image-placeholder-63@2x.png"
+    },
+    {
+      "id": 29,
+      "artistID": 104,
+      "name": "Edena`s Life",
+      "addTime": "Sep 30, 2022",
+      "category": "Music",
+      "price": 1.73,
+      "highestBid": 0.3,
+      "image": "https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/image-placeholder-63@2x.png"
+    },
+    {
+      "id": 30,
+      "artistID": 105,
+      "name": "Lifdena",
+      "addTime": "Sep 30, 2022",
+      "category": "Music",
+      "price": 1.73,
+      "highestBid": 0.3,
+      "image": "https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/image-placeholder-63@2x.png"
+    },
+    {
+      "id": 19,
+      "artistID": 110,
+      "name": "Distant Galaxy",
+      "addTime": "Sep 30, 2022",
+      "category": "Virtual Planet",
+      "price": 1.63,
+      "highestBid": 0.33,
+      "image": "https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/image-placeholder-62@2x.png"
+    },
+    {
+      "id": 31,
+      "artistID": 108,
+      "name": "Edenife",
+      "addTime": "Sep 30, 2022",
+      "category": "Music",
+      "price": 1.73,
+      "highestBid": 0.3,
+      "image": "https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/image-placeholder-63@2x.png"
+    },
+    {
+      "id": 3,
+      "artistID": 102,
+      "name": "Astrofiction",
+      "addTime": "Sep 30, 2022",
+      "category": "Sport",
+      "price": 1.93,
+      "highestBid": 0.48,
+      "image": "https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/image-placeholder-64@2x.png"
+    },
+    {
+      "id": 32,
+      "artistID": 101,
+      "name": "Astro",
+      "addTime": "Sep 30, 2022",
+      "category": "Sport",
+      "price": 1.93,
+      "highestBid": 0.48,
+      "image": "https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/image-placeholder-64@2x.png"
+    },
+    {
+      "id": 20,
+      "artistID": 111,
+      "name": "Distant Galaxy",
+      "addTime": "Sep 30, 2022",
+      "category": "Virtual NFT",
+      "price": 1.63,
+      "highestBid": 0.33,
+      "image": "https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/image-placeholder-62@2x.png"
+    },
+    {
+      "id": 17,
+      "artistID": 108,
+      "name": "Distant Galaxy",
+      "addTime": "Sep 30, 2022",
+      "category": "Virtual Real",
+      "price": 1.63,
+      "highestBid": 0.33,
+      "image": "https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/image-placeholder-62@2x.png"
+    },
+    {
+      "id": 52,
+      "artistID": 107,
+      "name": "Hapobo2",
+      "addTime": "Dec 05, 2022",
+      "category": "Art",
+      "price": 1.44,
+      "highestBid": 0.47,
+      "image": "https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/image-placeholder-65@2x.png"
+    },
+
+    {
+      "id": 62,
+      "artistID": 114,
+      "name": "Colorful Dog 0344",
+      "addTime": "Jan 01, 2023",
+      "category": "Art",
+      "price": 1.22,
+      "highestBid": 0.24,
+      "image": "https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/image-placeholder-73@2x.png"
+    },
+    {
+      "id": 36,
+      "artistID": 110,
+      "name": "Astro Colors",
+      "addTime": "Sep 30, 2022",
+      "category": "Sport",
+      "price": 1.93,
+      "highestBid": 0.48,
+      "image": "https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/image-placeholder-64@2x.png"
+    },
+
+    {
+      "id": 38,
+      "artistID": 109,
+      "name": "Astronomical",
+      "addTime": "Sep 30, 2022",
+      "category": "Sport",
+      "price": 1.93,
+      "highestBid": 0.48,
+      "image": "https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/image-placeholder-64@2x.png"
+    },
+    {
+      "id": 4,
+      "artistID": 103,
+      "name": "Magic Mushroom 0325",
+      "addTime": "Sep 30, 2022",
+      "category": "Sport",
+      "price": 1.02,
+      "highestBid": 0.28,
+      "image": "https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/image-placeholder@2x.png"
+    },
+    {
+      "id": 39,
+      "artistID": 100,
+      "name": "Mushroom 0375",
+      "addTime": "Sep 30, 2022",
+      "category": "Sport",
+      "price": 1.02,
+      "highestBid": 0.28,
+      "image": "https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/image-placeholder@2x.png"
+    },
+    {
+      "id": 40,
+      "artistID": 101,
+      "name": "Magroom 1225",
+      "addTime": "Sep 30, 2022",
+      "category": "Sport",
+      "price": 1.02,
+      "highestBid": 0.28,
+      "image": "https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/image-placeholder@2x.png"
+    },
+    {
+      "id": 41,
+      "artistID": 112,
+      "name": "Magic Mushroom 0497",
+      "addTime": "Sep 30, 2022",
+      "category": "Sport",
+      "price": 1.02,
+      "highestBid": 0.28,
+      "image": "https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/image-placeholder@2x.png"
+    },
+    {
+      "id": 42,
+      "artistID": 115,
+      "name": "Magic 2222",
+      "addTime": "Sep 30, 2022",
+      "category": "Sport",
+      "price": 1.02,
+      "highestBid": 0.28,
+      "image": "https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/image-placeholder@2x.png"
+    },
+    {
+      "id": 43,
+      "artistID": 114,
+      "name": "Magic25",
+      "addTime": "Sep 30, 2022",
+      "category": "Sport",
+      "price": 1.02,
+      "highestBid": 0.28,
+      "image": "https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/image-placeholder@2x.png"
+    },
+    {
+      "id": 44,
+      "artistID": 113,
+      "name": "Mushroom11",
+      "addTime": "Sep 30, 2022",
+      "category": "Sport",
+      "price": 1.02,
+      "highestBid": 0.28,
+      "image": "https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/image-placeholder@2x.png"
+    },
+    {
+      "id": 45,
+      "artistID": 112,
+      "name": "Magic Mushroom 8895",
+      "addTime": "Sep 30, 2022",
+      "category": "Sport",
+      "price": 1.02,
+      "highestBid": 0.28,
+      "image": "https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/image-placeholder@2x.png"
+    },
+    {
+      "id": 37,
+      "artistID": 111,
+      "name": "Worlds Astro",
+      "addTime": "Sep 30, 2022",
+      "category": "Sport",
+      "price": 1.93,
+      "highestBid": 0.48,
+      "image": "https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/image-placeholder-64@2x.png"
+    },
+    {
+      "id": 5,
+      "artistID": 104,
+      "name": "Happy Robot 032",
+      "addTime": "Dec 05, 2022",
+      "category": "Art",
+      "price": 1.44,
+      "highestBid": 0.47,
+      "image": "https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/image-placeholder-65@2x.png"
+    },{
+      "id": 72,
+      "artistID": 106,
+      "name": "Designer Bear",
+      "addTime": "Sep 30, 2022",
+      "category": "Art",
+      "price": 1.57,
+      "highestBid": 0.57,
+      "image": "https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/image-placeholder-1@2x.png"
+    },
+    {
+      "id": 46,
+      "artistID": 100,
+      "name": "Happy 032",
+      "addTime": "Dec 05, 2022",
+      "category": "Art",
+      "price": 1.44,
+      "highestBid": 0.47,
+      "image": "https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/image-placeholder-65@2x.png"
+    },
+    {
+      "id": 18,
+      "artistID": 109,
+      "name": "Distant Galaxy",
+      "addTime": "Sep 30, 2022",
+      "category": "Virtual",
+      "price": 1.63,
+      "highestBid": 0.33,
+      "image": "https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/image-placeholder-62@2x.png"
+    },
+
+    {
+      "id": 48,
+      "artistID": 102,
+      "name": "Robot 032",
+      "addTime": "Dec 05, 2022",
+      "category": "Art",
+      "price": 1.44,
+      "highestBid": 0.47,
+      "image": "https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/image-placeholder-65@2x.png"
+    },
+    {
+      "id": 49,
+      "artistID": 103,
+      "name": "Happy Robot 664",
+      "addTime": "Dec 05, 2022",
+      "category": "Art",
+      "price": 1.44,
+      "highestBid": 0.47,
+      "image": "https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/image-placeholder-65@2x.png"
+    },
+    {
+      "id": 50,
+      "artistID": 109,
+      "name": "Happy 032",
+      "addTime": "Dec 05, 2022",
+      "category": "Art",
+      "price": 1.44,
+      "highestBid": 0.47,
+      "image": "https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/image-placeholder-65@2x.png"
+    },
+    {
+      "id": 51,
+      "artistID": 106,
+      "name": "Hapot 032",
+      "addTime": "Dec 05, 2022",
+      "category": "Art",
+      "price": 1.44,
+      "highestBid": 0.47,
+      "image": "https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/image-placeholder-65@2x.png"
+    },
+    {
+      "id": 33,
+      "artistID": 103,
+      "name": "Astro Wrls",
+      "addTime": "Sep 30, 2022",
+      "category": "Sport",
+      "price": 1.93,
+      "highestBid": 0.48,
+      "image": "https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/image-placeholder-64@2x.png"
+    },
+
+    {
+      "id": 53,
+      "artistID": 108,
+      "name": "Robot 037",
+      "addTime": "Dec 05, 2022",
+      "category": "Art",
+      "price": 1.44,
+      "highestBid": 0.47,
+      "image": "https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/image-placeholder-65@2x.png"
+    },
+    {
+      "id": 6,
+      "artistID": 105,
+      "name": "Happy Robot 024",
+      "addTime": "Sep 04, 2021",
+      "category": "Art",
+      "price": 1.07,
+      "highestBid": 0.37,
+      "image": "https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/image-placeholder-66@2x.png"
+    },
+    {
+      "id": 54,
+      "artistID": 110,
+      "name": "Happy Robot 4",
+      "addTime": "Sep 04, 2021",
+      "category": "Art",
+      "price": 1.07,
+      "highestBid": 0.37,
+      "image": "https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/image-placeholder-66@2x.png"
+    },
+    {
+      "id": 55,
+      "artistID": 111,
+      "name": "Happy Robot Colors",
+      "addTime": "Sep 04, 2021",
+      "category": "Art",
+      "price": 1.07,
+      "highestBid": 0.37,
+      "image": "https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/image-placeholder-66@2x.png"
+    },
+    {
+      "id": 56,
+      "artistID": 112,
+      "name": "Active Robot 024",
+      "addTime": "Sep 04, 2021",
+      "category": "Art",
+      "price": 1.07,
+      "highestBid": 0.37,
+      "image": "https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/image-placeholder-66@2x.png"
+    },
+    {
+      "id": 57,
+      "artistID": 113,
+      "name": "Colorful Robot 024",
+      "addTime": "Sep 04, 2021",
+      "category": "Art",
+      "price": 1.07,
+      "highestBid": 0.37,
+      "image": "https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/image-placeholder-66@2x.png"
+    },
+    {
+      "id": 58,
+      "artistID": 114,
+      "name": "Happy Roco 024",
+      "addTime": "Sep 04, 2021",
+      "category": "Art",
+      "price": 1.07,
+      "highestBid": 0.37,
+      "image": "https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/image-placeholder-66@2x.png"
+    },
+    {
+      "id": 59,
+      "artistID": 115,
+      "name": "Roco 454",
+      "addTime": "Sep 04, 2021",
+      "category": "Art",
+      "price": 1.07,
+      "highestBid": 0.37,
+      "image": "https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/image-placeholder-66@2x.png"
+    },
+    {
+      "id": 8,
+      "artistID": 107,
+      "name": "Colorful Dog 0356",
+      "addTime": "Oct 30, 2022",
+      "category": "Art",
+      "price": 1.13,
+      "highestBid": 0.32,
+      "image": "https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/image-placeholder-67@2x.png"
+    },
+    {
+      "id": 9,
+      "artistID": 108,
+      "name": "Dancing Robot 0312",
+      "addTime": "Sep 30, 2022",
+      "category": "Art",
+      "price": 0.99,
+      "highestBid": 0.42,
+      "image": "https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/image-placeholder-68@2x.png"
+    },
+    {
+      "id": 10,
+      "artistID": 107,
+      "name": "Cherry Blossom Girl 035",
+      "addTime": "Jun 20, 2022",
+      "category": "Art",
+      "price": 1.99,
+      "highestBid": 0.62,
+      "image": "https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/image-placeholder-69@2x.png"
+    },
+
+    {
+      "id": 64,
+      "artistID": 100,
+      "name": "Space Travel",
+      "addTime": "Sep 30, 2022",
+      "category": "Art",
+      "price": 1.59,
+      "highestBid": 0.49,
+      "image": "https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/image-placeholder-70@2x.png"
+    },
+    {
+      "id": 12,
+      "artistID": 111,
+      "name": "Sunset Dimension",
+      "addTime": "Sep 30, 2022",
+      "category": "Art",
+      "price": 1.59,
+      "highestBid": 0.49,
+      "image": "https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/image-placeholder-2@2x.png"
+    },
+    {
+      "id": 13,
+      "artistID": 107,
+      "name": "Desert Walk",
+      "addTime": "Nov 13, 2021",
+      "category": "Art",
+      "price": 1.55,
+      "highestBid": 0.49,
+      "image": "https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/image-placeholder-71@2x.png"
+    },{
+      "id": 70,
+      "artistID": 106,
+      "name": "Designer Bear",
+      "addTime": "Sep 30, 2022",
+      "category": "Art",
+      "price": 1.57,
+      "highestBid": 0.57,
+      "image": "https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/image-placeholder-1@2x.png"
+    },
+    {
+      "id": 63,
+      "artistID": 100,
+      "name": "Desert Walk",
+      "addTime": "Nov 13, 2021",
+      "category": "Art",
+      "price": 1.55,
+      "highestBid": 0.49,
+      "image": "https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/image-placeholder-71@2x.png"
+    },
+    {
+      "id": 15,
+      "artistID": 113,
+      "name": "Colorful Dog 0344",
+      "addTime": "Jan 01, 2023",
+      "category": "Art",
+      "price": 1.22,
+      "highestBid": 0.24,
+      "image": "https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/image-placeholder-73@2x.png"
+    },
+    {
+      "id": 60,
+      "artistID": 101,
+      "name": "Colorful Dog 0344",
+      "addTime": "Jan 01, 2023",
+      "category": "Art",
+      "price": 1.22,
+      "highestBid": 0.24,
+      "image": "https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/image-placeholder-73@2x.png"
+    },
+    {
+      "id": 35,
+      "artistID": 109,
+      "name": "Astro Cosmos",
+      "addTime": "Sep 30, 2022",
+      "category": "Sport",
+      "price": 1.93,
+      "highestBid": 0.48,
+      "image": "https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/image-placeholder-64@2x.png"
+    }
+  ]
+}
