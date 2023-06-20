@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@500&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -108,11 +109,13 @@ form {
   --category-card-per-row: 4;
   --category-card-gap: 30px;
   --nft-cards-per-row: 3;
-  --nft-cards-gap: 30px;
+  --nft-cards-gap: 40px;
   --card-per-row: 3;
   --card-gap: 30px;
   --subscribe-per-row: 2;
   --subscribe-gap: 80px;
+  --filter-per-row: 3;
+  --filter-gap: 35px;
 }
 .j-flex {
   display: flex;
@@ -468,11 +471,25 @@ footer {
   border-radius: 20px;
   position: relative;
   transition: 1s ease-in-out;
+  transition-delay: 0.5s;
   transform-style: preserve-3d;
   backface-visibility: hidden;
 }
 .nft_card:hover {
   transform: rotateY(0.5turn);
+}
+
+.nft_card i {
+  position: absolute;
+  top: -20px;
+  right: -20px;
+  display: inline-block;
+  opacity: 0.5;
+  padding: 20px;
+  font-size: 20px;
+  background-color: #cccccc;
+  color: #2b2b2b;
+  border-radius: 50%;
 }
 .home-card {
   background-color: #3b3b3b !important;
@@ -703,9 +720,8 @@ footer {
   width: 100%;
   margin-top: -30px;
   font-family: "Space Mono", Arial, Helvetica, sans-serif;
-  border-collapse:separate; 
+  border-collapse: separate;
   border-spacing: 0 1em;
-  
 }
 .ranking,
 .ranking th {
@@ -1235,7 +1251,7 @@ td {
   background: #a259ff;
   box-shadow: inset 0 0 5px #fff;
 }
-/**/
+/*Background Stars*/
 html {
   background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
 }
@@ -1800,4 +1816,60 @@ html {
   to {
     transform: translateY(-2000px);
   }
+}
+/*Favorite*/
+.filter_form {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.filter {
+  width: calc(
+    100% / var(--filter-per-row) -
+      (var(--filter-gap) - var(--filter-gap) / var(--filter-per-row))
+  );
+  margin-bottom: 30px;
+}
+.filter label {
+  margin-right: 17px;
+  font-family: "Caveat", cursive;
+  font-size: 25px;
+}
+.filter input {
+  width: 200px;
+  height: 30px;
+  border: none;
+  border-radius: 20px;
+  padding: 5px 10px;
+}
+#search_btn_for_favorite {
+  position: absolute;
+  right: 0;
+  bottom: 45%;
+  background-color: transparent;
+  border: none;
+  transition: all 0.3s ease;
+  transform: scale(1);
+}
+#search_btn_for_favorite:hover,
+#reset_btn_for_favorite:hover {
+  transform: scale(0.95);
+}
+#reset_btn_for_favorite {
+  position: absolute;
+  font-size: 22px;
+  color: #cccccc;
+  right: -50px;
+  bottom: 49%;
+  background-color: transparent;
+  border: none;
+  transition: all 0.3s ease;
+  transform: scale(1);
+}
+.red-heart {
+  color: red;
+}
+.added-to-cart {
+  color: green;
 }

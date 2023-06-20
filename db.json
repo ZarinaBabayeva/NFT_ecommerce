@@ -453,7 +453,7 @@
       "highestBid": 0.3,
       "image": "https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/image-placeholder-63@2x.png"
     },
-    
+
     {
       "id": 59,
       "artistID": 115,
@@ -493,7 +493,8 @@
       "price": 1.99,
       "highestBid": 0.62,
       "image": "https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/image-placeholder-69@2x.png"
-    },{
+    },
+    {
       "id": 74,
       "artistID": 107,
       "name": "Desert Walk",
@@ -894,7 +895,8 @@
       "price": 1.44,
       "highestBid": 0.47,
       "image": "https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/image-placeholder-65@2x.png"
-    },{
+    },
+    {
       "id": 72,
       "artistID": 106,
       "name": "Designer Bear",
@@ -1116,7 +1118,8 @@
       "price": 1.55,
       "highestBid": 0.49,
       "image": "https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/image-placeholder-71@2x.png"
-    },{
+    },
+    {
       "id": 70,
       "artistID": 106,
       "name": "Designer Bear",
@@ -1165,6 +1168,14 @@
       "price": 1.93,
       "highestBid": 0.48,
       "image": "https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/image-placeholder-64@2x.png"
+    }
+  ],
+  "users": [
+    {
+      "userName": "admin",
+      "password": "12345678",
+      "favorites": [],
+      "basket": []
     }
   ]
 }

@@ -29,6 +29,8 @@ function Header() {
       <ul className="menu j-flex">
         <NavLink to="/marketplace">Marketplace</NavLink>
         <NavLink to="/rankings">Rankings</NavLink>
+        <NavLink to="/favorite">Favorite</NavLink>
+        <NavLink to="/basket">Basket</NavLink>
         <NavLink to="/connectWallet">Connect a wallet</NavLink>
         <NavLink to="/createAccount" className="btn">
           <img
@@ -49,6 +51,12 @@ function Header() {
             </span>
             <NavLink to="/marketplace" onClick={toggleMenu}>
               Marketplace
+            </NavLink>
+            <NavLink to="/favorite" onClick={toggleMenu}>
+              Favorite
+            </NavLink>
+            <NavLink to="/basket" onClick={toggleMenu}>
+              Basket
             </NavLink>
             <NavLink to="/rankings" onClick={toggleMenu}>
               Rankings
