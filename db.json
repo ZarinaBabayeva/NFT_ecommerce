@@ -175,6 +175,29 @@
       "solds": 15,
       "bio": "The Internet's Friendliest Designer Kid.",
       "walletAddress": "0xc0E3fd78sd987zbdfg7hsd3skcm009"
+    },
+    {
+      "userName": "aytac",
+      "avatar": "https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/avatar-placeholder-137@2x.png",
+      "eth": 34.53,
+      "volume": 250246,
+      "followers": 3012,
+      "solds": 52,
+      "bio": "The Internet's Friendliest Designer Kid.",
+      "walletAddress": "0xc0E3fdknsd987zbdfg7hsd3skcm009",
+      "id": 116
+    },
+    {
+      "userName": "aytac",
+      "password": "a123456",
+      "avatar": "https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/avatar-placeholder-137@2x.png",
+      "eth": 0,
+      "volume": 0,
+      "followers": 0,
+      "solds": 0,
+      "bio": "",
+      "walletAddress": "",
+      "id": 117
     }
   ],
   "collections": [
@@ -196,7 +219,8 @@
         "https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/secondary-photo-placeholder@2x.png",
         "https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/secondary-photo-placeholder-1@2x.png"
       ],
-      "artistID": 100
+      "artistID": 100,
+      "nfts": []
     },
     {
       "id": 2,
@@ -221,7 +245,29 @@
         "https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/secondary-photo-placeholder-2@2x.png",
         "https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/secondary-photo-placeholder-3@2x.png"
       ],
-      "artistID": 107
+      "artistID": 107,
+      "nfts": [
+        {
+          "id": 1,
+          "artistID": 100,
+          "name": "Distant Galaxy",
+          "addTime": "Sep 30, 2022",
+          "category": "Virtual Worlds",
+          "price": 1.63,
+          "highestBid": 0.33,
+          "image": "https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/image-placeholder-62@2x.png"
+        },
+        {
+          "id": 11,
+          "artistID": 110,
+          "name": "Space Travel",
+          "addTime": "Sep 30, 2022",
+          "category": "Art",
+          "price": 1.59,
+          "highestBid": 0.49,
+          "image": "https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/image-placeholder-70@2x.png"
+        }
+      ]
     },
     {
       "id": 3,
@@ -239,7 +285,8 @@
         "https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/secondary-photo-placeholder-10@2x.png",
         "https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/secondary-photo-placeholder-11@2x.png"
       ],
-      "artistID": 112
+      "artistID": 112,
+      "nfts": []
     }
   ],
   "auctions": [
@@ -453,7 +500,6 @@
       "highestBid": 0.3,
       "image": "https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/image-placeholder-63@2x.png"
     },
-
     {
       "id": 59,
       "artistID": 115,
@@ -764,7 +810,6 @@
       "highestBid": 0.47,
       "image": "https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/image-placeholder-65@2x.png"
     },
-
     {
       "id": 62,
       "artistID": 114,
@@ -785,7 +830,6 @@
       "highestBid": 0.48,
       "image": "https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/image-placeholder-64@2x.png"
     },
-
     {
       "id": 38,
       "artistID": 109,
@@ -926,7 +970,6 @@
       "highestBid": 0.33,
       "image": "https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/image-placeholder-62@2x.png"
     },
-
     {
       "id": 48,
       "artistID": 102,
@@ -977,7 +1020,6 @@
       "highestBid": 0.48,
       "image": "https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/image-placeholder-64@2x.png"
     },
-
     {
       "id": 53,
       "artistID": 108,
@@ -1088,7 +1130,6 @@
       "highestBid": 0.62,
       "image": "https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/image-placeholder-69@2x.png"
     },
-
     {
       "id": 64,
       "artistID": 100,
@@ -1172,10 +1213,16 @@
   ],
   "users": [
     {
-      "userName": "admin",
-      "password": "12345678",
-      "favorites": [],
-      "basket": []
+      "email": "zarinababayeva02@gmail.com",
+      "username": "zarina",
+      "password": "Zarina2002",
+      "id": 1
+    },
+    {
+      "email": "aysu2010@gmail.com",
+      "username": "aysu",
+      "password": "a123456789",
+      "id": 2
     }
   ]
 }

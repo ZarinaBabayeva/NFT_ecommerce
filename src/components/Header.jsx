@@ -1,12 +1,15 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import { NavLink } from "react-router-dom";
+import { AuthContext } from "./AuthContext";
 
-function Header() {
+function Header({ isSignedIn }) {
+  const { user, signOut } = useContext(AuthContext);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
+
   return (
     <nav className="j-flex">
       <NavLink to="/">
@@ -29,16 +32,34 @@ function Header() {
       <ul className="menu j-flex">
         <NavLink to="/marketplace">Marketplace</NavLink>
         <NavLink to="/rankings">Rankings</NavLink>
-        <NavLink to="/favorite">Favorite</NavLink>
-        <NavLink to="/basket">Basket</NavLink>
+        {user && (
+          <>
+            <NavLink to="/favorite">Favorites</NavLink>
+            <NavLink to="/cart">Cart</NavLink>
+            <NavLink to="/collection">Collection</NavLink>
+            <NavLink to="/about">About</NavLink>
+            <NavLink to="/blog">Blog</NavLink>
+          </>
+        )}
+        <NavLink to="/contactUs">Contact Us</NavLink>
         <NavLink to="/connectWallet">Connect a wallet</NavLink>
-        <NavLink to="/createAccount" className="btn">
-          <img
-            src="https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/user@2x.svg"
-            alt=""
-          />
-          Sign Up
-        </NavLink>
+        {user ? (
+          <NavLink to="/" className="btn" onClick={signOut}>
+            <img
+              src="https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/user@2x.svg"
+              alt=""
+            />
+            Sign Out
+          </NavLink>
+        ) : (
+          <NavLink to="/signIn" className="btn">
+            <img
+              src="https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/user@2x.svg"
+              alt=""
+            />
+            Sign In
+          </NavLink>
+        )}
       </ul>
       {isMenuOpen && (
         <div className="modal-container">
@@ -52,11 +73,27 @@ function Header() {
             <NavLink to="/marketplace" onClick={toggleMenu}>
               Marketplace
             </NavLink>
-            <NavLink to="/favorite" onClick={toggleMenu}>
-              Favorite
+            {user && (
+              <>
+                <NavLink to="/favorite" onClick={toggleMenu}>
+                  Favorites
+                </NavLink>
+                <NavLink to="/cart" onClick={toggleMenu}>
+                  Cart
+                </NavLink>
+                <NavLink to="/collection" onClick={toggleMenu}>
+                  Collection
+                </NavLink>
+                <NavLink to="/blog" onClick={toggleMenu}>
+                  Blog
+                </NavLink>
+              </>
+            )}
+            <NavLink to="/about" onClick={toggleMenu}>
+              About
             </NavLink>
-            <NavLink to="/basket" onClick={toggleMenu}>
-              Basket
+            <NavLink to="/about" onClick={toggleMenu}>
+              About
             </NavLink>
             <NavLink to="/rankings" onClick={toggleMenu}>
               Rankings
@@ -64,13 +101,23 @@ function Header() {
             <NavLink to="/connectWallet" onClick={toggleMenu}>
               Connect a wallet
             </NavLink>
-            <NavLink to="/createAccount" className="btn" onClick={toggleMenu}>
-              <img
-                src="https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/user@2x.svg"
-                alt=""
-              />
-              Sign Up
-            </NavLink>
+            {user ? (
+              <NavLink to="/" className="btn" onClick={signOut}>
+                <img
+                  src="https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/user@2x.svg"
+                  alt=""
+                />
+                Sign Out
+              </NavLink>
+            ) : (
+              <NavLink to="/signIn" className="btn" onClick={toggleMenu}>
+                <img
+                  src="https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/user@2x.svg"
+                  alt=""
+                />
+                Sign In
+              </NavLink>
+            )}
           </div>
         </div>
       )}
