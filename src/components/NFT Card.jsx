@@ -120,31 +120,28 @@ function NFTCard({ artist, nft }) {
         userId: user.id,
         nfts: [nft],
       };
-  
-      useEffect(() => {
-        fetch("http://localhost:3000/collections", {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify(collection),
+
+      fetch("http://localhost:3000/collections", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(collection),
+      })
+        .then((response) => response.json())
+        .then((data) => {
+          console.log("Collection created:", data);
+
+          setCollections((prevCollections) => [...prevCollections, data]);
+          setSelectedCollection(data);
+          setIsAddingToCollection(false);
+          setNewCollectionName("");
         })
-          .then((response) => response.json())
-          .then((data) => {
-            console.log("Collection created:", data);
-  
-            setCollections((prevCollections) => [...prevCollections, data]);
-            setSelectedCollection(data);
-            setIsAddingToCollection(false);
-            setNewCollectionName("");
-          })
-          .catch((error) => {
-            console.error("Error creating collection:", error);
-          });
-      }, []);
+        .catch((error) => {
+          console.error("Error creating collection:", error);
+        });
     }
   };
-  
 
   const handleAddNFTToCollection = () => {
     if (selectedCollection && user) {
@@ -152,7 +149,7 @@ function NFTCard({ artist, nft }) {
         ...selectedCollection,
         nfts: [...selectedCollection.nfts, nft],
       };
-  
+
       fetch(`http://localhost:3000/collections/${selectedCollection.id}`, {
         method: "PUT",
         headers: {
@@ -166,7 +163,9 @@ function NFTCard({ artist, nft }) {
           // Update the state with the updated collection
           setCollections((prevCollections) =>
             prevCollections.map((collection) =>
-              collection.id === selectedCollection.id ? updatedCollection : collection
+              collection.id === selectedCollection.id
+                ? updatedCollection
+                : collection
             )
           );
           setIsAddingToCollection(false);
@@ -176,8 +175,6 @@ function NFTCard({ artist, nft }) {
         });
     }
   };
-  
-  
 
   const formatTime = (timeString) => {
     const options = {

@@ -287,6 +287,33 @@
       ],
       "artistID": 112,
       "nfts": []
+    },
+    {
+      "title": "MyCollection",
+      "userId": 1,
+      "nfts": [
+        {
+          "id": 1,
+          "artistID": 100,
+          "name": "Distant Galaxy",
+          "addTime": "Sep 30, 2022",
+          "category": "Virtual Worlds",
+          "price": 1.63,
+          "highestBid": 0.33,
+          "image": "https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/image-placeholder-62@2x.png"
+        },
+        {
+          "id": 1,
+          "artistID": 100,
+          "name": "Distant Galaxy",
+          "addTime": "Sep 30, 2022",
+          "category": "Virtual Worlds",
+          "price": 1.63,
+          "highestBid": 0.33,
+          "image": "https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/image-placeholder-62@2x.png"
+        }
+      ],
+      "id": 4
     }
   ],
   "auctions": [
