@@ -62,6 +62,7 @@ function Marketplace() {
             <input
               type="text"
               id="search"
+              className="input_css"
               placeholder="Search your favourite NFTs"
               value={value}
               onChange={(e) => setValue(e.target.value)}

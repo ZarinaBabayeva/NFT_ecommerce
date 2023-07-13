@@ -31,12 +31,12 @@ const ContactUs = () => {
       <div id="stars"></div>
       <div id="stars2"></div>
       <div id="stars3"></div>
-      <div className="container contact_us_container" >
+      <div className="container contact_us_container">
         <div>
           <div className="mb-5 mt-3">
             <h1 className="display-4 mb-4">Contact Us</h1>
           </div>
-
+          <br />
           <div className="sec_sp">
             <div className="mb-5">
               <h3 className="color_sec py-4">Get In Touch</h3>
@@ -55,7 +55,7 @@ const ContactUs = () => {
                 <div className="row">
                   <div className="col-lg-6 form-group">
                     <input
-                      className="form-control"
+                      className="input_css"
                       id="name"
                       name="name"
                       placeholder="Name"
@@ -66,7 +66,7 @@ const ContactUs = () => {
                   </div>
                   <div className="col-lg-6 form-group">
                     <input
-                      className="form-control rounded-0"
+                      className="input_css rounded-0"
                       id="email"
                       name="email"
                       placeholder="Email"
@@ -77,7 +77,7 @@ const ContactUs = () => {
                   </div>
                 </div>
                 <textarea
-                  className="form-control rounded-0"
+                  className="input_css rounded-0"
                   id="message"
                   name="message"
                   placeholder="Message"

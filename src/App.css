@@ -743,7 +743,7 @@ footer {
   width: 100%;
   position: relative;
 }
-#search {
+.input_css {
   width: 97%;
   background-color: transparent;
   box-shadow: inset 2px 2px 8px #fff;

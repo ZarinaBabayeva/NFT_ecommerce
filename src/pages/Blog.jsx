@@ -59,60 +59,78 @@ const Blog = () => {
       <div id="stars2"></div>
       <div id="stars3"></div>
       <div className="container">
-        <h1 className="blog_head_text">Create your NFT</h1>
-        <form onSubmit={handleSubmit} className="blog_form">
-          {/* Form fields */}
-          <div className="form-group">
-            <label htmlFor="name">Name:</label>
-            <input
-              type="text"
-              id="name"
-              value={name}
-              onChange={handleNameChange}
-              required
+        <div className="j-flex">
+          <div className="image_flex">
+            <img
+              src="https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/image-placeholder-84@1x.png"
+              alt=""
             />
           </div>
-          <div className="form-group">
-            <label htmlFor="price">Price:</label>
+          <form onSubmit={handleSubmit} className="blog_form">
+            <h1 className="blog_head_text">Create your NFT</h1>
+            <br />
+            <div className="form-group">
+              <label htmlFor="name">Name:</label>
+              <input
+                className="input_css"
+                type="text"
+                id="name"
+                value={name}
+                onChange={handleNameChange}
+                required
+              />
+            </div>
+            <div className="form-group">
+              <label htmlFor="price">Price:</label>
+              <input
+                className="input_css"
+                type="number"
+                id="price"
+                value={price}
+                onChange={handlePriceChange}
+                required
+              />
+            </div>
+            <div className="form-group">
+              <label htmlFor="category">Category:</label>
+              <select
+                className="input_css"
+                id="category"
+                value={category}
+                onChange={handleCategoryChange}
+                required
+              >
+                <option value="">Select a category</option>
+                <option value="Category1">Category 1</option>
+                <option value="Category2">Category 2</option>
+                <option value="Category3">Category 3</option>
+              </select>
+            </div>
+            <div className="form-group">
+              <label htmlFor="fileInput" className="custom-file-input">
+                Upload File
+              </label>
+              <input
+                type="file"
+                id="fileInput"
+                onChange={handleFileChange}
+                accept=".jpg, .png, .gif"
+              />
+              {selectedFile && (
+                <p className="file-name">Selected file: {selectedFile.name}</p>
+              )}
+            </div>
             <input
-              type="number"
-              id="price"
-              value={price}
-              onChange={handlePriceChange}
-              required
+              type="hidden"
+              id="artistId"
+              value={getLoggedInArtistId()}
+              readOnly
             />
-          </div>
-          <div className="form-group">
-            <label htmlFor="category">Category:</label>
-            <select
-              id="category"
-              value={category}
-              onChange={handleCategoryChange}
-              required
-            >
-              <option value="">Select a category</option>
-              <option value="Category1">Category 1</option>
-              <option value="Category2">Category 2</option>
-              <option value="Category3">Category 3</option>
-            </select>
-          </div>
-          <div className="form-group">
-            <label htmlFor="fileInput" className="custom-file-input">
-              Upload File
-            </label>
-            <input
-              type="file"
-              id="fileInput"
-              onChange={handleFileChange}
-              accept=".jpg, .png, .gif"
-            />
-            {selectedFile && (
-              <p className="file-name">Selected file: {selectedFile.name}</p>
-            )}
-          </div>
-          <input type="hidden" id="artistId" value={getLoggedInArtistId()} readOnly />
-          <button type="submit" className="btn blog_btn">Create NFT</button>
-        </form>
+            <button type="submit" className="btn blog_btn">
+              Create NFT
+            </button>
+          </form>
+        </div>
       </div>
     </>
   );
