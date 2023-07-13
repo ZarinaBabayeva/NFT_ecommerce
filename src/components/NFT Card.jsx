@@ -39,12 +39,18 @@ function NFTCard({ artist, nft }) {
   }, []);
 
   useEffect(() => {
-    fetch("http://localhost:3000/collections")
-      .then((response) => response.json())
-      .then((json) => {
+    const fetchCollections = async () => {
+      try {
+        const response = await fetch("http://localhost:3000/collections");
+        const json = await response.json();
         setCollections(json);
-      });
-  }, [collections]);
+      } catch (error) {
+        console.error("Error fetching collections:", error);
+      }
+    };
+
+    fetchCollections();
+  }, []);
 
   const handleAddToCart = () => {
     if (user) {
@@ -52,7 +58,6 @@ function NFTCard({ artist, nft }) {
       setCartItems((prevItems) => {
         const existingItem = prevItems.find((item) => item.id === nft.id);
         if (existingItem) {
-          // NFT already exists in the cart, update the count
           const updatedItems = prevItems.map((item) => {
             if (item.id === nft.id) {
               return { ...item, count: item.count + 1 };
@@ -61,7 +66,6 @@ function NFTCard({ artist, nft }) {
           });
           return updatedItems;
         } else {
-          // NFT doesn't exist in the cart, add it with count 1
           const newItem = {
             id: nft.id,
             count: 1,
@@ -71,6 +75,7 @@ function NFTCard({ artist, nft }) {
             artist: artists.find((artist) => artist.id === nft.artistID),
             highestBid: nft.highestBid,
             auction: auction,
+            addTime: nft.addTime,
           };
           return [...prevItems, newItem];
         }
@@ -84,11 +89,9 @@ function NFTCard({ artist, nft }) {
       setFavoriteItems((prevItems) => {
         const existingItem = prevItems.find((item) => item.id === nft.id);
         if (existingItem) {
-          // NFT already exists in favorites, remove it
           const updatedItems = prevItems.filter((item) => item.id !== nft.id);
           return updatedItems;
         } else {
-          // NFT doesn't exist in favorites, add it
           const newItem = {
             id: nft.id,
             name: nft.name,
@@ -97,6 +100,7 @@ function NFTCard({ artist, nft }) {
             price: nft.price,
             highestBid: nft.highestBid,
             auction: auction,
+            addTime: nft.addTime,
           };
           return [...prevItems, newItem];
         }
@@ -131,7 +135,6 @@ function NFTCard({ artist, nft }) {
         .then((response) => response.json())
         .then((data) => {
           console.log("Collection created:", data);
-
           setCollections((prevCollections) => [...prevCollections, data]);
           setSelectedCollection(data);
           setIsAddingToCollection(false);
@@ -160,7 +163,6 @@ function NFTCard({ artist, nft }) {
         .then((response) => response.json())
         .then((data) => {
           console.log("NFT added to collection:", data);
-          // Update the state with the updated collection
           setCollections((prevCollections) =>
             prevCollections.map((collection) =>
               collection.id === selectedCollection.id
@@ -213,7 +215,10 @@ function NFTCard({ artist, nft }) {
             <p>
               Price<span>{nft.price} ETH</span>
             </p>
-            {/* Rest of the code... */}
+            <p>
+              Highest bid:<span>{nft.highestBid} ETH</span>
+            </p>
+            <p>Created on: {formatTime(nft.addTime)}</p>
           </div>
         </div>
       </Link>

@@ -175,29 +175,6 @@
       "solds": 15,
       "bio": "The Internet's Friendliest Designer Kid.",
       "walletAddress": "0xc0E3fd78sd987zbdfg7hsd3skcm009"
-    },
-    {
-      "userName": "aytac",
-      "avatar": "https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/avatar-placeholder-137@2x.png",
-      "eth": 34.53,
-      "volume": 250246,
-      "followers": 3012,
-      "solds": 52,
-      "bio": "The Internet's Friendliest Designer Kid.",
-      "walletAddress": "0xc0E3fdknsd987zbdfg7hsd3skcm009",
-      "id": 116
-    },
-    {
-      "userName": "aytac",
-      "password": "a123456",
-      "avatar": "https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/avatar-placeholder-137@2x.png",
-      "eth": 0,
-      "volume": 0,
-      "followers": 0,
-      "solds": 0,
-      "bio": "",
-      "walletAddress": "",
-      "id": 117
     }
   ],
   "collections": [
@@ -292,6 +269,16 @@
       "title": "MyCollection",
       "userId": 1,
       "nfts": [
+        {
+          "id": 1,
+          "artistID": 100,
+          "name": "Distant Galaxy",
+          "addTime": "Sep 30, 2022",
+          "category": "Virtual Worlds",
+          "price": 1.63,
+          "highestBid": 0.33,
+          "image": "https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/image-placeholder-62@2x.png"
+        },
         {
           "id": 1,
           "artistID": 100,
@@ -1023,6 +1010,7 @@
       "name": "Happy 032",
       "addTime": "Dec 05, 2022",
       "category": "Art",
+      
       "price": 1.44,
       "highestBid": 0.47,
       "image": "https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/image-placeholder-65@2x.png"
@@ -1250,6 +1238,12 @@
       "username": "aysu",
       "password": "a123456789",
       "id": 2
+    },
+    {
+      "email": "user@gmail.com",
+      "username": "second_user",
+      "password": "123456User",
+      "id": 3
     }
   ]
 }
