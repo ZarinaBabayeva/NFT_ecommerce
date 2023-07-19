@@ -35,6 +35,8 @@ class MyUser(AbstractBaseUser):
         ('other', 'Other'),
     ]
     username = models.CharField(unique=True, max_length=255)
+    first_name = models.CharField(max_length=255, blank=True, null=True)
+    last_name = models.CharField(max_length=255, blank=True, null=True)
     email = models.EmailField(max_length=120)
     password = models.CharField(max_length=300)
     role = models.CharField(max_length=255, choices=ROLE_CHOICES, default='buyer')

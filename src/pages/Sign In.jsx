@@ -13,32 +13,36 @@ function SignIn() {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    const response = await fetch("db.json");
-    const data = await response.json();
-    const users = data.users;
-    const artists = data.artists;
+    try {
+      const response = await fetch("http://127.0.0.1:8000/accounts/login/", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          username: username,
+          password: password,
+        }),
+      });
 
-    const user = users.find(
-      (user) => user.username === username && user.password === password
-    );
-
-    const artist = artists.find(
-      (artist) => artist.userName === username && artist.password === password
-    );
-
-    if (user) {
-      signIn(user);
-      setIsSignedIn(true);
-      setMessage("User sign-in successful!");
-      navigate("/marketplace");
-    } else if (artist) {
-      setMessage("Artist sign-in successful!");
-      setIsSignedIn(true);
-    } else {
-      setMessage("Invalid username or password");
+      if (response.ok) {
+        const data = await response.json();
+        console.log(response)
+        signIn(data.user);
+        setIsSignedIn(true);
+        setMessage("Sign-in successful!");
+        navigate("/marketplace");
+      } else {
+        setMessage("Invalid username or password");
+        setIsSignedIn(false);
+      }
+    } catch (error) {
+      console.error("Error:", error);
+      setMessage("An error occurred");
       setIsSignedIn(false);
     }
   };
+
   return (
     <>
       <div id="stars"></div>

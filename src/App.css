@@ -852,7 +852,6 @@ td {
   gap: 60px;
   margin-bottom: 20px;
 }
-.create,
 .connect {
   width: calc((100% / 2) - 15px);
   height: 100%;
@@ -880,6 +879,12 @@ td {
 .create form {
   margin-top: 20px;
 }
+.create_form {
+  width: 100%;
+}
+.create_form label {
+  color: #5a5959;
+}
 .c_btn {
   margin-top: 20px;
   display: inline-flex;
@@ -899,6 +904,22 @@ td {
 .c_btn img {
   width: 40px;
   height: 40px;
+}
+.create_right,
+.create_left {
+  width: 50%;
+}
+.create_left {
+  text-align: left;
+}
+.create_right {
+  text-align: right;
+}
+.create-label {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap:10px
 }
 /* Create Account */
 
@@ -927,7 +948,7 @@ td {
   padding: 12px 92px;
 }
 .radio_div {
-  width: 69%;
+  width: 45%;
   margin-bottom: -14px;
 }
 .radio_label {
@@ -939,12 +960,12 @@ td {
 .have {
   width: 69%;
   margin: 15px 0;
-  margin-left: -20px;
-  justify-content: center;
+  justify-content: flex-start;
   gap: 5px;
 }
 .have .btn {
-  padding: 3px 8px;
+  margin-top: 10px;
+  padding: 2px 8px;
 }
 /* Browse Categories Section */
 .category_cards_row {
