@@ -59,7 +59,7 @@ const Blog = () => {
       <div id="stars2"></div>
       <div id="stars3"></div>
       <div className="container">
-        <div className="j-flex">
+        <div className="j-flex blog">
           <div className="image_flex">
             <img
               src="https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/image-placeholder-84@1x.png"

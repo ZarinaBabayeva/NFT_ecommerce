@@ -5,11 +5,11 @@ import "swiper/css/effect-flip";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { EffectFlip, Pagination, Navigation } from "swiper";
-import PL1 from "../media/partner_logo_1.png";
-import PL2 from "../media/partner_logo_2.png";
-import PL3 from "../media/partner_logo_3.png";
-import PL4 from "../media/partner_logo_4.png";
-import PL5 from "../media/partner_logo_5.png";
+import PL1 from "/Users/user/Desktop/front/public/media/partner_logo_1.png";
+import PL2 from "/Users/user/Desktop/front/public/media/partner_logo_2.png";
+import PL3 from "/Users/user/Desktop/front/public/media/partner_logo_3.png";
+import PL4 from "/Users/user/Desktop/front/public/media/partner_logo_4.png";
+import PL5 from "/Users/user/Desktop/front/public/media/partner_logo_5.png";
 function About() {
   return (
     <>
