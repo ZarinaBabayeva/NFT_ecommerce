@@ -19,9 +19,10 @@ function Home() {
     .map((artist) => artist.solds)
     .reduce((sum, a) => sum + a, 0);
   useEffect(() => {
-    fetch("http://localhost:3000/artists")
+    fetch("http://127.0.0.1:8000/accounts/users_list/")
       .then((response) => response.json())
       .then((json) => {
+        console.log(json)
         setArtists(json);
         setLoading(false);
       });
@@ -222,15 +223,14 @@ function Home() {
                     src={
                       artists.find(
                         (artist) => auctions[0]?.artistID === artist.id
-                      ).avatar
+                      )?.avatar
                     }
                     alt=""
                   />
                 </a>
                 <p>
                   {
-                    artists.find((artist) => auctions[0].artistID === artist.id)
-                      .userName
+                    artists.find((artist) => auctions[0].artistID === artist.id)?.userName
                   }
                 </p>
               </div>

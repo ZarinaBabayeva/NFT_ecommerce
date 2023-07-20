@@ -207,8 +207,8 @@ function NFTCard({ artist, nft }) {
           <div className="artist_info">
             <h5>{nft.name}</h5>
             <div className="artist_card j-flex">
-              <img src={artist.avatar} alt="" />
-              <p>{artist.userName}</p>
+              {/* <img src={artist.avatar} alt="" /> */}
+              {/* <p>{artist.userName}</p> */}
             </div>
           </div>
           <div className="nft_additional_info j-flex">

@@ -15,9 +15,7 @@ function CollectionCard({ collection, artist }) {
         <Link className="btn">
           {collection.images.length > 5
             ? collection.images.length % 5
-              ? `${
-                  collection.images.length - (collection.images.length % 5)
-                }+`
+              ? `${collection.images.length - (collection.images.length % 5)}+`
               : collection.images.length
             : collection.images.length}
         </Link>
@@ -25,9 +23,9 @@ function CollectionCard({ collection, artist }) {
       <h5>{collection.title}</h5>
       <div className="artist_card j-flex">
         <Link>
-          <img src={artist.avatar} alt="" />
+          <img src={artist?.avatar} alt="" />
         </Link>
-        <p>{artist.userName}</p>
+        <p>{artist?.username}</p>
       </div>
     </div>
   );

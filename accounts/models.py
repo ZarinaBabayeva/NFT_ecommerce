@@ -43,6 +43,8 @@ class MyUser(AbstractBaseUser):
     avatar = models.ImageField(upload_to=upload_avatar)
     gender = models.CharField(max_length=20 , choices=GENDER_CHOICES, default='other')
     bio = models.TextField(max_length=2000)
+    followers = models.ManyToManyField('self',related_name='followers_reverse',symmetrical=False,blank=True,)
+    following = models.ManyToManyField('self', symmetrical=False, blank=True)
     walletAddress = models.CharField(max_length=256)
     created_at = models.DateTimeField(auto_now_add=True)
     is_active = models.BooleanField(default=True)

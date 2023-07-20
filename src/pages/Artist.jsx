@@ -1,8 +1,9 @@
 import NFTCard from "../components/NFT Card";
 import { Link, useParams } from "react-router-dom";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useContext } from "react";
 import Pagination from "../components/Pagination";
 import Loading from "../components/Loading";
+import { AuthContext } from "../components/AuthContext";
 function Artist() {
   const { id } = useParams();
 
@@ -10,16 +11,45 @@ function Artist() {
   const [artist, setArtist] = useState({});
   const [nfts, setNfts] = useState([]);
   const [loading, setLoading] = useState(true);
-  const [isClicked, setIsClicked] = useState(false);
+  const { user } = useContext(AuthContext);
   const [activePage, setActivePage] = useState(1);
+  const [isFollowing, setIsFollowing] = useState(false);
+
+  const handleFollow = () => {
+    console.log(user)
+    const token = user ? user.token : null;
+
+    if (!token) {
+      console.error("No token authentication.");
+      return;
+    }
+
+    fetch(`http://127.0.0.1:8000/accounts/follow/${id}/`, {
+      method: isFollowing ? "DELETE" : "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Authorization: `Bearer ${token}`,
+      },
+    })
+      .then((response) => response.json())
+      .then((data) => {
+        setIsFollowing(!isFollowing);
+        console.log(data.message);
+      })
+      .catch((error) => {
+        console.error("Error : ", error);
+      });
+  };
+
   const nftPerPage = 3;
   let totalSales = artists
     .map((artist) => artist.solds)
     .reduce((sum, a) => sum + a, 0);
   useEffect(() => {
-    fetch("http://localhost:3000/artists")
+    fetch("http://127.0.0.1:8000/accounts/users_list/")
       .then((response) => response.json())
       .then((json) => {
+        console.log(json);
         setArtists(json);
         setLoading(false);
       });
@@ -34,7 +64,7 @@ function Artist() {
       });
   }, []);
   useEffect(() => {
-    fetch(`http://localhost:3000/artists/${id}`)
+    fetch(`http://127.0.0.1:8000/accounts/user_detail/${id}`)
       .then((response) => response.json())
       .then((json) => {
         setArtist(json);
@@ -139,22 +169,8 @@ function Artist() {
                   "..." +
                   artist.walletAddress?.slice(28)}
               </Link>
-              <Link
-                className="btn headline_btn"
-                onClick={() => setIsClicked(!isClicked)}
-              >
-                {isClicked ? (
-                  "Following"
-                ) : (
-                  <b className="j-flex">
-                    <img
-                      src="https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/plus@2x.svg"
-                      alt=""
-                      style={{ marginRight: "10px" }}
-                    />
-                    Follow
-                  </b>
-                )}
+              <Link className="btn headline_btn" onClick={handleFollow}>
+                {isFollowing ? "Following" : "Follow"}
               </Link>
             </div>
             <div className="artist_info_wallet mobile">

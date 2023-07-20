@@ -20,7 +20,7 @@ function AuthProvider({ children }) {
     if (token) {
       fetchUserInfo(token)
         .then((userData) => {
-          setUser(userData);
+          setUser({ ...userData, token }); 
         })
         .catch((error) => {
           signOut();
@@ -31,7 +31,7 @@ function AuthProvider({ children }) {
     setToken(token);
     fetchUserInfo(token)
       .then((userData) => {
-        setUser(userData);
+        setUser({ ...userData, token }); 
         navigate("/");
       })
       .catch((error) => {
@@ -44,7 +44,8 @@ function AuthProvider({ children }) {
     navigate("/signIn");
   };
   const fetchUserInfo = (token) => {
-    return fetch("http://localhost:8000/accounts/user/", {
+    console.log(token);
+    return fetch("http://127.0.0.1:8000/accounts/user/", {
       headers: {
         Authorization: `Bearer ${token}`,
       },
@@ -60,7 +61,7 @@ function AuthProvider({ children }) {
         return userData;
       });
   };
-  
+
   return (
     <AuthContext.Provider value={{ user, signIn, signOut }}>
       {children}
