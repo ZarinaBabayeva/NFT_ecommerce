@@ -27,9 +27,8 @@ function SignIn() {
 
       if (response.ok) {
         const data = await response.json();
-        console.log(response)
-        signIn(data.user);
-        setIsSignedIn(true);
+        const token = data.tokens.access; 
+        signIn(token); 
         setMessage("Sign-in successful!");
         navigate("/marketplace");
       } else {

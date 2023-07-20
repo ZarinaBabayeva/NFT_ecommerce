@@ -42,10 +42,12 @@ INSTALLED_APPS = [
     'accounts',
     #3rd party apps
     'rest_framework',
+    'corsheaders',
 ]
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
+    'corsheaders.middleware.CorsMiddleware',
     'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -143,6 +145,11 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 INTERNAL_IPS = [
     'localhost',
     '127.0.0.1',
+]
+
+CORS_ALLOWED_ORIGINS = [
+    "http://127.0.0.1:8000", 
+    "http://localhost:5173", 
 ]
 
 REST_FRAMEWORK = {
