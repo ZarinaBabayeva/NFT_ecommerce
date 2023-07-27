@@ -2023,7 +2023,6 @@ html {
 }
 .about_section1,
 .about_section1_part2 {
-  width: 95%;
   display: flex;
   align-items: center;
   justify-content: center;
