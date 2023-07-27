@@ -16,7 +16,7 @@ function About() {
       <div id="stars"></div>
       <div id="stars2"></div>
       <div id="stars3"></div>
-      <div className="container">
+      <div className="container_about">
         <h1 className="about_title">About the platform</h1>
         <div className="about_section1">
           <div className="section1_img">
@@ -93,11 +93,10 @@ function About() {
               </div>
             </div>
           </div>
-          <div className="section1_img">
+          <div className="section2_img">
             <img
               src=" https://themegenix.net/wp/nerko/wp-content/uploads/2022/12/features-02.png"
-              alt=""
-            />
+              alt="" className = "img"></img>
           </div>
         </div>
         <div className="divider_box">
