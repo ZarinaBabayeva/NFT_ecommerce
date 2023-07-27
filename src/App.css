@@ -2013,6 +2013,10 @@ html {
   cursor: pointer;
 }
 /*About*/
+.container_about {
+  width: 1200px;
+  margin: 0 auto;
+}
 .h2 {
   text-align: left;
   font-size: 60px !important;
@@ -2029,6 +2033,9 @@ html {
   width: 45%;
   height: auto;
   padding-top: 30px;
+}
+.section2_img{
+  width: 50%;
 }
 .img {
   width: 100%;
