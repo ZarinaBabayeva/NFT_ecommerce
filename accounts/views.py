@@ -18,17 +18,21 @@ class RegisterView(generics.CreateAPIView):
     serializer_class = RegisterSerializer
 
 class UsersListView(generics.ListAPIView):
-    queryset = User.objects.all()
     serializer_class = UsersListSerializer
 
+    def get_queryset(self):
+        return User.objects.exclude(is_superuser=True)
+
 class UserView(generics.ListAPIView):
-    queryset = User.objects.all()
     serializer_class = UsersListSerializer
     permission_classes = [IsAuthenticated]
 
+    def get_queryset(self):
+        return User.objects.exclude(is_superuser=True)
+
 class UserDetailView(generics.RetrieveAPIView):
-    queryset = User.objects.all()
     serializer_class = UsersListSerializer
+    queryset = User.objects.exclude(is_superuser=True)
 
 class FollowUser(APIView):
     permission_classes = [IsAuthenticated]

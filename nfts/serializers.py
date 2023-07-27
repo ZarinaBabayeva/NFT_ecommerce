@@ -11,4 +11,14 @@ class NFTSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = NFT
-        fields = ('id', 'name', 'addTime', 'category', 'price', 'image')
+        fields = "__all__"
+
+class StartAuctionSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = NFT
+        fields = ['id', 'is_auction', 'auction_start_time', 'auction_end_time']
+
+class NFTBidSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = NFT
+        fields = ['id', 'highest_bid', 'highest_bidder']

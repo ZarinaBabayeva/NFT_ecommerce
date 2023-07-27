@@ -375,6 +375,7 @@ footer {
           var(--artists-card-per-row)
       )
   );
+  height: 370px;
   padding: 20px;
   background-color: #3b3b3b;
   border-radius: 20px;

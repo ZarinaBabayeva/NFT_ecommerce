@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 function CreateAccount() {
   const [username, setUsername] = useState("");
@@ -13,6 +13,7 @@ function CreateAccount() {
   const [gender, setGender] = useState("other");
   const [bio, setBio] = useState("");
   const [walletAddress, setWalletAddress] = useState("");
+  const navigate = useNavigate();
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -29,6 +30,7 @@ function CreateAccount() {
     formData.append("bio", bio);
     formData.append("walletAddress", walletAddress);
     console.log(formData);
+
     fetch("http://127.0.0.1:8000/accounts/register/", {
       method: "POST",
       body: formData,
@@ -37,6 +39,7 @@ function CreateAccount() {
         console.log(response);
         if (response.ok) {
           console.log("User created successfully!");
+          navigate('/');
         } else {
           console.error("User creation failed!");
         }
