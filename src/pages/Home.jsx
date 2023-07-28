@@ -4,7 +4,7 @@ import CollectionCard from "../components/Collection Card";
 import ArtistsCard from "../components/Artists Card";
 import CategoryCard from "../components/Category Card";
 import NFTCard from "../components/NFT Card";
-import GIF from "/Users/user/Desktop/front/public/media/GIF.gif";
+//import GIF from "/Users/user/Desktop/front/public/media/GIF.gif";
 import Auction from "../components/Auction";
 import Loading from "../components/Loading";
 
