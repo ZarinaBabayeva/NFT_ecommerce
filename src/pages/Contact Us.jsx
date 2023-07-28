@@ -25,7 +25,7 @@ const ContactUs = () => {
     setEmail("");
     setMessage("");
   };
-
+  <h1>Contact</h1>
   return (
     <>
       <div id="stars"></div>
