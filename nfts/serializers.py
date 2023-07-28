@@ -22,3 +22,8 @@ class NFTBidSerializer(serializers.ModelSerializer):
     class Meta:
         model = NFT
         fields = ['id', 'highest_bid', 'highest_bidder']
+
+class CartItemSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = CartItem
+        fields = "__all__"

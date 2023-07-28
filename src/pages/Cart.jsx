@@ -6,6 +6,34 @@ import NFTCard from "../components/NFT Card";
 function Cart() {
   const { user, cartItems, setCartItems } = useContext(AuthContext);
   const [bidAmount, setBidAmount] = useState("");
+  const [currentNFT, setCurrentNFT] = useState(null); // Состояние для хранения выбранного NFT
+  console.log(cartItems)
+
+  const handleBidChange = (e) => {
+    setBidAmount(e.target.value);
+  };
+
+  const handleBidSubmit = () => {
+    if (currentNFT) {
+      fetch(`http://127.0.0.1:8000/nft/${currentNFT.id}/place_bid/`, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Authorization: `Bearer ${localStorage.getItem("token")}`, // Передаем токен аутентификации
+        },
+        body: JSON.stringify({ highest_bid: parseFloat(bidAmount) }),
+      })
+        .then((response) => response.json())
+        .then((data) => {
+          console.log(data); // Здесь вы можете обработать ответ от сервера после успешной ставки
+          setBidAmount(""); // Очистить поле ввода ставки после успешной ставки
+          setCurrentNFT(null); // Очистить текущий NFT после успешной ставки
+        })
+        .catch((error) => {
+          console.error("Ошибка при размещении ставки: ", error);
+        });
+    }
+  };
 
   if (!user) {
     return (
@@ -20,7 +48,7 @@ function Cart() {
     );
   }
 
-  if (cartItems.length === 0) {
+  if (cartItems?.length === 0) {
     return (
       <>
         <div id="stars"></div>
@@ -36,26 +64,6 @@ function Cart() {
       </>
     );
   }
-
-  const handleBidChange = (e) => {
-    setBidAmount(e.target.value);
-  };
-
-  const handleBidSubmit = (itemId) => {
-    const updatedItems = cartItems.map((item) => {
-      if (item.id === itemId) {
-        const newBid = parseFloat(bidAmount);
-        if (newBid >= item.auction.currentBid) {
-          return { ...item, auction: { ...item.auction, currentBid: newBid } };
-        } else {
-          alert("Your bid must be higher than the current bid.");
-        }
-      }
-      return item;
-    });
-    setCartItems(updatedItems);
-    setBidAmount("");
-  };
 
   const handleItemRemove = (itemId) => {
     const updatedItems = cartItems.filter((item) => item.id !== itemId);
@@ -83,7 +91,7 @@ function Cart() {
       <section className="nft_card_section">
         <div className="container">
           <div className="nft_cards_row j-flex">
-            {cartItems.map((item) => (
+            {cartItems?.map((item) => (
               <div className="nft_bid">
                 <NFTCard artist={item.artist} nft={item} key={item.id} />
                 {item.auction && (

@@ -28,7 +28,7 @@ function Home() {
       });
   }, []);
   useEffect(() => {
-    fetch("http://localhost:3000/nfts")
+    fetch("http://127.0.0.1:8000/nfts/nfts_list/")
       .then((response) => response.json())
       .then((json) => {
         setNfts(json);

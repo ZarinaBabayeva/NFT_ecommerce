@@ -68,3 +68,33 @@ class EndAuctionView(APIView):
                                 status=status.HTTP_400_BAD_REQUEST)
         except NFT.DoesNotExist:
             return Response({"message": "NFT not found."}, status=status.HTTP_404_NOT_FOUND)
+        
+class CartItemView(APIView):
+    def get(self, request):
+        cart_items = CartItem.objects.filter(user=request.user)
+        serializer = CartItemSerializer(cart_items, many=True)
+        return Response(serializer.data, status=status.HTTP_200_OK)
+
+    def post(self, request):
+        nft_id = request.data.get("nft_id")
+        quantity = request.data.get("quantity", 1)
+
+        try:
+            nft = NFT.objects.get(pk=nft_id)
+        except NFT.DoesNotExist:
+            return Response({"message": "NFT not found."}, status=status.HTTP_404_NOT_FOUND)
+
+        cart_item, created = CartItem.objects.get_or_create(user=request.user, nft=nft)
+        cart_item.quantity += quantity
+        cart_item.save()
+
+        serializer = CartItemSerializer(cart_item)
+        return Response(serializer.data, status=status.HTTP_201_CREATED)
+
+    def delete(self, request, nft_id):
+        try:
+            cart_item = CartItem.objects.get(user=request.user, nft__id=nft_id)
+            cart_item.delete()
+            return Response({"message": "Item removed from cart."}, status=status.HTTP_204_NO_CONTENT)
+        except CartItem.DoesNotExist:
+            return Response({"message": "Item not found in cart."}, status=status.HTTP_404_NOT_FOUND)

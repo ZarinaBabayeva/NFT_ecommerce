@@ -21,7 +21,7 @@ class UsersListView(generics.ListAPIView):
     serializer_class = UsersListSerializer
 
     def get_queryset(self):
-        return User.objects.exclude(is_superuser=True)
+        return MyUser.objects.filter(role='artist').exclude(is_superuser=True)
 
 class UserView(generics.ListAPIView):
     serializer_class = UsersListSerializer

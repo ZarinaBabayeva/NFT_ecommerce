@@ -55,31 +55,22 @@ function NFTCard({ artist, nft }) {
   const handleAddToCart = () => {
     if (user) {
       setIsAddedToCart(true);
-      setCartItems((prevItems) => {
-        const existingItem = prevItems.find((item) => item.id === nft.id);
-        if (existingItem) {
-          const updatedItems = prevItems.map((item) => {
-            if (item.id === nft.id) {
-              return { ...item, count: item.count + 1 };
-            }
-            return item;
-          });
-          return updatedItems;
-        } else {
-          const newItem = {
-            id: nft.id,
-            count: 1,
-            price: nft.price,
-            name: nft.name,
-            image: nft.image,
-            artist: artists.find((artist) => artist.id === nft.artistID),
-            highestBid: nft.highestBid,
-            auction: auction,
-            addTime: nft.addTime,
-          };
-          return [...prevItems, newItem];
-        }
-      });
+      fetch(`http://127.0.0.1:8000/nfts/cart/`, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Authorization: `Bearer ${localStorage.getItem("token")}`, // Передаем токен аутентификации
+        },
+        body: JSON.stringify({ nft_id: nft.id, quantity: 1 }),
+      })
+        .then((response) => response.json())
+        .then((data) => {
+          console.log(data); // Здесь вы можете обработать ответ от сервера после успешного добавления в корзину
+          // Если требуется обновить список элементов в корзине, можете сделать это здесь
+        })
+        .catch((error) => {
+          console.error("Ошибка при добавлении в корзину: ", error);
+        });
     }
   };
 
