@@ -5,7 +5,7 @@ import Loading from "../components/Loading";
 
 function NFTCard({ artist, nft }) {
   const { addToCollection } = useContext(AuthContext);
-  const { user, setCartItems, setFavoriteItems } = useContext(AuthContext);
+  const { user, setFavoriteItems } = useContext(AuthContext);
   const [loading, setLoading] = useState(true);
   const [artists, setArtists] = useState([]);
   const [isAddedToCart, setIsAddedToCart] = useState(false);
@@ -15,6 +15,7 @@ function NFTCard({ artist, nft }) {
   const [selectedCollection, setSelectedCollection] = useState(null);
   const [newCollectionName, setNewCollectionName] = useState("");
   const [auction, setAuction] = useState(null);
+  const [cart, setCart] = useState([]);
 
   useEffect(() => {
     setLoading(false);
@@ -59,17 +60,18 @@ function NFTCard({ artist, nft }) {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
-          Authorization: `Bearer ${localStorage.getItem("token")}`, // Передаем токен аутентификации
+          Authorization: `Bearer ${localStorage.getItem("token")}`,
         },
         body: JSON.stringify({ nft_id: nft.id, quantity: 1 }),
       })
         .then((response) => response.json())
         .then((data) => {
-          console.log(data); // Здесь вы можете обработать ответ от сервера после успешного добавления в корзину
-          // Если требуется обновить список элементов в корзине, можете сделать это здесь
+          console.log(data);
+          setCart(data)
+          console.log(cart)
         })
         .catch((error) => {
-          console.error("Ошибка при добавлении в корзину: ", error);
+          console.error("Cart error: ", error);
         });
     }
   };
@@ -207,7 +209,7 @@ function NFTCard({ artist, nft }) {
               Price<span>{nft.price} ETH</span>
             </p>
             <p>
-              Highest bid:<span>{nft.highestBid} ETH</span>
+              Highest bid:<span>{nft.highest_bid} ETH</span>
             </p>
             <p>Created on: {formatTime(nft.addTime)}</p>
           </div>

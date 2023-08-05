@@ -4,6 +4,7 @@ from .models import *
 from .serializers import *
 from rest_framework.views import APIView
 from rest_framework.response import Response
+from rest_framework.permissions import IsAuthenticated
 
 
 class NFTListView(generics.ListAPIView):
@@ -70,6 +71,7 @@ class EndAuctionView(APIView):
             return Response({"message": "NFT not found."}, status=status.HTTP_404_NOT_FOUND)
         
 class CartItemView(APIView):
+    permission_classes = [IsAuthenticated]
     def get(self, request):
         cart_items = CartItem.objects.filter(user=request.user)
         serializer = CartItemSerializer(cart_items, many=True)
