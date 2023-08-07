@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+//import axios from 'axios' 
 
 const ContactUs = () => {
   const [name, setName] = useState("");
@@ -25,12 +26,13 @@ const ContactUs = () => {
     setEmail("");
     setMessage("");
   };
-  <h1>Contact</h1>
+
   return (
     <>
       <div id="stars"></div>
       <div id="stars2"></div>
       <div id="stars3"></div>
+
       <div className="container contact_us_container">
         <div>
           <div className="mb-5 mt-3">
@@ -41,17 +43,16 @@ const ContactUs = () => {
             <div className="mb-5">
               <h3 className="color_sec py-4">Get In Touch</h3>
               <address>
-                <strong>Email: nftwebsite@gmail.com</strong>
+                <strong>Email: nftwebsite23@outlook.com</strong>
                 <br />
                 <br />
                 <p>
                   <strong>Phone: +994 50 999 99 99</strong>
                 </p>
               </address>
-              <p></p>
             </div>
             <div className="d-flex align-items-center">
-              <form className="contact__form" onSubmit={handleSubmit}>
+              <form className="contact__form" action="contact/" method  = "POST" onSubmit={handleSubmit}>
                 <div className="row">
                   <div className="col-lg-6 form-group">
                     <input

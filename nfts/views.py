@@ -4,6 +4,10 @@ from .models import *
 from .serializers import *
 from rest_framework.views import APIView
 from rest_framework.response import Response
+from django.shortcuts import render, HttpResponse
+from django.core.mail import send_mail
+from django.conf import settings
+
 
 
 class NFTListView(generics.ListAPIView):
@@ -98,3 +102,34 @@ class CartItemView(APIView):
             return Response({"message": "Item removed from cart."}, status=status.HTTP_204_NO_CONTENT)
         except CartItem.DoesNotExist:
             return Response({"message": "Item not found in cart."}, status=status.HTTP_404_NOT_FOUND)
+        
+
+
+
+class EmailAPI(APIView):
+    def contact_page(request):
+        if request.method == "POST":
+            name = request.POST.get['name'] 
+            email = request.POST.get['email']
+            message = request.POST.get['message']
+
+        if name is None and email is None and message  is None:
+            return Response({'message': 'There must be a name and email or message'}, status=200)
+        elif name is None and email is None:
+            return Response({'message': 'Name and email are required.'}, status=200)
+        elif email  is None:
+            return Response({'message': 'Email required.'}, status=200)
+        elif message is None:
+            return Response({'message': 'Message required.'}, status=200)
+        else:
+            send_mail(
+                name,
+                message,
+                settings.EMAIL_HOST_USER, 
+                ['nftwebsite23@outlook.com'],
+                fail_silently=False,
+            )
+
+            return HttpResponse("<h1> Your message successfully sent </h1>")
+      
+      

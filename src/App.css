@@ -2321,3 +2321,61 @@ input[type="file"] {
 .contact_us_container {
   text-align: center;
 }
+/*PROFILE*/
+.profile-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.profile-header {
+  display: flex;
+  align-items: center;
+}
+
+.avatar img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.user-info h2 {
+  margin-bottom: 10px;
+}
+
+.profile-body {
+  margin-top: 20px;
+}
+
+.nft-collections {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.nft-collection {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.profile-footer {
+  margin-top: 20px;
+}
+
+.sign-out-button {
+  padding: 10px 20px;
+  background-color: #ff4f4f;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.sign-out-button:hover {
+  background-color: #e23c3c;
+}

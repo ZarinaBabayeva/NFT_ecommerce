@@ -17,7 +17,23 @@ function Profile() {
       {user ? (
         <>
           <div className="container">
-              
+          <>
+          <div className="profile-container">
+            <div className="profile-header">
+              {/* Profil avatar */}
+            </div>
+            <div className="profile-body">
+              {/* profile details */}
+            </div>
+            <div className="profile-footer">
+              {/* Sign Out Button */}
+              <button className="sign-out-button" onClick={handleSignOut}>
+                Sign Out
+              </button>
+            </div>
+          </div>
+        </>
+
           </div>
         </>
       ) : (

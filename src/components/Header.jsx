@@ -43,6 +43,7 @@ function Header({ isSignedIn }) {
         )}
         <NavLink to="/contactUs">Contact Us</NavLink>
         <NavLink to="/connectWallet">Connect a wallet</NavLink>
+        <NavLink to="/profile">Profile</NavLink>
         {user ? (
           <NavLink to="/" className="btn" onClick={signOut}>
             <img

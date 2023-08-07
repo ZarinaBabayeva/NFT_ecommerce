@@ -45,6 +45,8 @@ INSTALLED_APPS = [
     'corsheaders',
 ]
 
+
+
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'corsheaders.middleware.CorsMiddleware',
@@ -176,3 +178,13 @@ SIMPLE_JWT = {
     'AUTH_TOKEN_CLASSES' : ('rest_framework_simplejwt.tokens.AccessToken',),
     'TOKEN_TYPE_CLAIM' : "token_type",
 }
+
+#email settings
+EMAIL_BACKEND = 'django.core.mail.backends.smp.EmailBackend'
+EMAIL_HOST = 'ssmtp-mail.outlook.com'
+EMAIL_PORT = '25'
+EMAIL_HOST_USER = 'nftwebsite23@outlook.com'
+EMAIL_HOST_PASSWORD = 'nftMarket23'
+EMAIL_USE_TLS = True
+EMAIL_TIMEOUT = 300
+
