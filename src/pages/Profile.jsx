@@ -10,48 +10,49 @@ function Profile() {
   };
 
   return (
-    <>
-      <div id="stars"></div>
-      <div id="stars2"></div>
-      <div id="stars3"></div>
-      {user ? (
-        <>
-          <div className="container">
-          <>
+    <div className="profile-page">
+      <div className="stars"></div>
+      <div className="stars2"></div>
+      <div className="stars3"></div>
+      <div className="container">
+        {user ? (
           <div className="profile-container">
             <div className="profile-header">
-              {/* Profil avatar */}
+              <img
+                className="profile-avatar"
+                src={user.avatar}
+                alt={`${user.username}'s Avatar`}
+              />
             </div>
             <div className="profile-body">
-              {/* profile details */}
+              <h2>{`${user.username}'s Profile`}</h2>
+              <p>Email: {`${user.email}`}</p>
+              <p>Bio: {`${user.bio}`}</p>
+              <p>Wallet Adress: {`${user.walletAdress}`}</p>
             </div>
             <div className="profile-footer">
-              {/* Sign Out Button */}
-              <button className="sign-out-button" onClick={handleSignOut}>
+              <button className="signout-btn" onClick={handleSignOut}>
                 Sign Out
               </button>
             </div>
           </div>
-        </>
-
-          </div>
-        </>
-      ) : (
-        <div className="container">
-          <div className="cart_view">
-            <h3 className="view">Please sign in </h3>
-            <p>&#129488;</p>
-            <Link to="/signin" className="btn ">
+        ) : (
+          <div className="sign-in-prompt">
+            <h3 className="view">Please sign in</h3>
+            <p>📋</p>
+            <Link to="/signin" className="btn">
               Go to Sign In Page
             </Link>
           </div>
-        </div>
-      )}
-    </>
+        )}
+      </div>
+    </div>
   );
 }
 
 export default Profile;
+
+
 {
   /* <p>Welcome, {user.username}!</p>
           <button onClick={handleSignOut}>Sign Out</button> */

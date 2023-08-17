@@ -5,11 +5,6 @@ import "swiper/css/effect-flip";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { EffectFlip, Pagination, Navigation } from "swiper";
-import PL1 from "/Users/user/Desktop/about/images/partner_logo_1.png";
-import PL2 from "/Users/user/Desktop/about/images/partner_logo_2.png";
-import PL3 from "/Users/user/Desktop/about/images/partner_logo_3.png";
-import PL4 from "/Users/user/Desktop/about/images/partner_logo_4.png";
-import PL5 from "/Users/user/Desktop/about/images/partner_logo_5.png";
 function About() {
   return (
     <>
@@ -64,7 +59,7 @@ function About() {
         <div className="about_section1_part2">
           <div className="section1_text">
             <h6>SYNC AND TRACK</h6>
-            <h2>
+            <h2 className="h2">
               Multiple Chains,
               <br /> One Home
             </h2>
@@ -72,6 +67,7 @@ function About() {
               We make it easy to Discover, Invest and manage all your NFTs at
               one place, looked up one of the more obscure.Find the right NFT
               collections to buy within the platform.
+              <i class="fa-solid fa-magnifying-glass"></i>
             </p>
             <div className="about_fact">
               <div className="icon_box">
@@ -184,19 +180,19 @@ function About() {
         <div className="partner_box">
           <div className="partners">
             <a href="https://www.nft-dao.org/" target="_blank">
-              <img src={PL1} alt="partner 1"></img>
+              <img src="https://xhibiter-nextjs.netlify.app/images/partners/partner_logo_1.png" alt="partner 1" />
             </a>
             <a href="https://www.nft-dao.org/" target="_blank">
-              <img src={PL2} alt="partner 2"></img>
+              <img src= "https://xhibiter-nextjs.netlify.app/images/partners/partner_logo_2.png" alt="partner 2"></img>
             </a>
             <a href="https://www.nft-dao.org/" target="_blank">
-              <img src={PL3} alt="partner 3"></img>
+              <img src="https://xhibiter-nextjs.netlify.app/images/partners/partner_logo_3.png" alt="partner 3"></img>
             </a>
             <a href="https://www.nft-dao.org/" target="_blank">
-              <img src={PL4} alt="partner 4"></img>
+              <img src="https://xhibiter-nextjs.netlify.app/images/partners/partner_logo_4.png" alt="partner 4"></img>
             </a>
             <a href="https://www.nft-dao.org/" target="_blank">
-              <img src={PL5} alt="partner 5"></img>
+              <img src="https://xhibiter-nextjs.netlify.app/images/partners/partner_logo_5.png" alt="partner 5"></img>
             </a>
           </div>
         </div>

@@ -920,7 +920,7 @@ td {
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  gap:10px
+  gap: 10px;
 }
 /* Create Account */
 
@@ -2034,7 +2034,7 @@ html {
   height: auto;
   padding-top: 30px;
 }
-.section2_img{
+.section2_img {
   width: 50%;
 }
 .img {
@@ -2196,6 +2196,7 @@ h6 {
 }
 .service_title h3 {
   color: white;
+  font-size: 35px;
 }
 .swiper {
   width: 100%;
@@ -2321,14 +2322,17 @@ input[type="file"] {
 .contact_us_container {
   text-align: center;
 }
+
 /*PROFILE*/
 .profile-container {
-  max-width: 600px;
-  margin: 0 auto;
-  padding: 20px;
-  background-color: #f0f0f0;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  background-color: linear-gradient(
+    90deg,
+    rgba(29, 0, 36, 1) 0%,
+    rgba(59, 9, 121, 0.9753151260504201) 49%,
+    rgba(40, 26, 168, 0.9753151260504201) 95%
+  );
+  color: white;
+  padding-top: 60px;
 }
 
 .profile-header {
@@ -2336,19 +2340,25 @@ input[type="file"] {
   align-items: center;
 }
 
+.profile-body {
+  margin: 0 auto;
+
+  padding: 20px 50px;
+  line-height: 1.5;
+  color: white;
+  background-color: linear-gradient(
+    90deg,
+    rgba(29, 0, 36, 1) 0%,
+    rgba(59, 9, 121, 0.9753151260504201) 49%,
+    rgba(40, 26, 168, 0.9753151260504201) 95%
+  );
+}
+
 .avatar img {
-  width: 80px;
-  height: 80px;
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
   margin-right: 20px;
-}
-
-.user-info h2 {
-  margin-bottom: 10px;
-}
-
-.profile-body {
-  margin-top: 20px;
 }
 
 .nft-collections {
@@ -2365,17 +2375,19 @@ input[type="file"] {
 
 .profile-footer {
   margin-top: 20px;
+  margin-bottom: 50px;
 }
 
-.sign-out-button {
+.signout-btn {
   padding: 10px 20px;
-  background-color: #ff4f4f;
-  color: #fff;
+  background-color: purple;
+  color: white;
   border: none;
-  border-radius: 5px;
+  border-radius: 10px;
   cursor: pointer;
 }
 
-.sign-out-button:hover {
-  background-color: #e23c3c;
+.signout-btn:hover {
+  background-color: white;
+  color: purple;
 }
