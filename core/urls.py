@@ -11,6 +11,7 @@ urlpatterns = [
     # re_path(r'^(?P<path>.*)/$', TemplateView.as_view(template_name='base.html')),
     path('nfts/', include('nfts.urls')),
     path('accounts/', include('accounts.urls')),
+    #url(r'^auth/', include('djoser.urls')),
 ]
 
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

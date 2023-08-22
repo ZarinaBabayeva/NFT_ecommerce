@@ -21,7 +21,7 @@ function Favorite() {
     );
   }
 
-  if (favoriteItems.length === 0) {
+  if (favoriteItems && favoriteItems.length === 0) {
     return (
       <>
         <div id="stars"></div>
@@ -53,7 +53,7 @@ function Favorite() {
       <section className="nft_card_section">
         <div className="container">
           <div className="nft_cards_row j-flex">
-            {favoriteItems.map((item) => (
+            {favoriteItems?.map((item) => (
               <NFTCard key={item.id} artist={item.artist} nft={item} />
             ))}
           </div>

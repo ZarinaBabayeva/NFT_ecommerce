@@ -178,6 +178,7 @@ function NFT() {
                       artist={artists.find((f) => f.id === a.artistID)}
                       nft={a}
                       idx={index}
+                      img = {a.img}
                     />
                   );
                 }

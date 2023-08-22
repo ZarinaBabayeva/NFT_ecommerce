@@ -35,7 +35,7 @@ function Header({ isSignedIn }) {
         {user && (
           <>
             <NavLink to="/favorite">Favorites</NavLink>
-            <NavLink to="/cart">Cart</NavLink>
+            <NavLink to="/cart">Card</NavLink>
             <NavLink to="/collection">Collection</NavLink>
             <NavLink to="/about">About</NavLink>
             <NavLink to="/blog">Blog</NavLink>

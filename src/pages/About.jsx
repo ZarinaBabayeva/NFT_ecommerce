@@ -67,12 +67,12 @@ function About() {
               We make it easy to Discover, Invest and manage all your NFTs at
               one place, looked up one of the more obscure.Find the right NFT
               collections to buy within the platform.
-              <i class="fa-solid fa-magnifying-glass"></i>
+              <i className="fa-solid fa-magnifying-glass"></i>
             </p>
             <div className="about_fact">
               <div className="icon_box">
                 <div className="icon">
-                  <i class="fa-regular fa-object-ungroup"></i>
+                  <i className="fa-regular fa-object-ungroup"></i>
                 </div>
                 <p>
                   Collections Indexed <br />
@@ -81,7 +81,7 @@ function About() {
               </div>
               <div className="icon_box">
                 <div className="icon">
-                  <i class="fa-regular fa-object-group"></i>
+                  <i className="fa-regular fa-object-group"></i>
                 </div>
                 <p>
                   Difference in Floor <br /> & Estimated Value
@@ -110,7 +110,7 @@ function About() {
             <div className="service_list">
               <div className="services_item">
                 <div className="service_icon">
-                  <i class="fa-solid fa-gem"></i>
+                  <i className="fa-solid fa-gem"></i>
                 </div>
                 <h4>Year Experience</h4>
                 <p>
@@ -120,7 +120,7 @@ function About() {
               </div>
               <div className="services_item">
                 <div className="service_icon">
-                  <i class="fa-regular fa-user"></i>
+                  <i className="fa-regular fa-user"></i>
                 </div>
                 <h4>Expert Teams</h4>
                 <p>
@@ -130,7 +130,7 @@ function About() {
               </div>
               <div className="services_item">
                 <div className="service_icon">
-                  <i class="fa-brands fa-ethereum"></i>
+                  <i className="fa-brands fa-ethereum"></i>
                 </div>
                 <h4>Best NFT Game</h4>
                 <p>
@@ -140,7 +140,7 @@ function About() {
               </div>
               <div className="services_item">
                 <div className="service_icon">
-                  <i class="fa-solid fa-gear"></i>
+                  <i className="fa-solid fa-gear"></i>
                 </div>
                 <h4>Worldwide Client</h4>
                 <p>

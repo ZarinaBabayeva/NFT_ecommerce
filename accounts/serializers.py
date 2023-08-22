@@ -91,7 +91,7 @@ class RegisterSerializer(serializers.ModelSerializer):
         if len(username) < 3:
            raise serializers.ValidationError({'error': 'Username must be at least 3 characters'})
 
-        if not re.match(r'^[a-zA-Z0-9_.]+$', username):
+        if not re.match(r'^[a-z A-Z 0-9_.]+$', username):
            raise serializers.ValidationError({'error': 'Username can only contain letters, numbers, dots (.), and underscores (_)'})
 
         if password != password_confirmation:

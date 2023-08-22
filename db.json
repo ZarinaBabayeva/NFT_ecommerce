@@ -298,6 +298,26 @@
           "price": 1.63,
           "highestBid": 0.33,
           "image": "https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/image-placeholder-62@2x.png"
+        },
+        {
+          "id": 1,
+          "artistID": 100,
+          "name": "Distant Galaxy",
+          "addTime": "Sep 30, 2022",
+          "category": "Virtual Worlds",
+          "price": 1.63,
+          "highestBid": 0.33,
+          "image": "https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/image-placeholder-62@2x.png"
+        },
+        {
+          "id": 59,
+          "artistID": 115,
+          "name": "Roco 454",
+          "addTime": "Sep 04, 2021",
+          "category": "Art",
+          "price": 1.07,
+          "highestBid": 0.37,
+          "image": "https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/image-placeholder-66@2x.png"
         }
       ],
       "id": 4
@@ -1010,7 +1030,6 @@
       "name": "Happy 032",
       "addTime": "Dec 05, 2022",
       "category": "Art",
-      
       "price": 1.44,
       "highestBid": 0.47,
       "image": "https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/image-placeholder-65@2x.png"

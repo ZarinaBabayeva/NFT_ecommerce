@@ -1,13 +1,34 @@
-import React, { useContext, useState } from "react";
+import React, { useContext, useState, useEffect } from "react";
 import { AuthContext } from "../components/AuthContext";
 import { Link } from "react-router-dom";
 import NFTCard from "../components/NFT Card";
 
 function Cart() {
-  const { user, cartItems, setCartItems } = useContext(AuthContext);
+  const { user } = useContext(AuthContext);
   const [bidAmount, setBidAmount] = useState("");
   const [currentNFT, setCurrentNFT] = useState(null); // Состояние для хранения выбранного NFT
-  console.log(cartItems)
+  const [cartItems, setCartItems] = useState([]);
+
+
+  useEffect(() => {
+    const token=localStorage.getItem("token")
+    fetch("http://127.0.0.1:8000/nfts/cart/", {
+      method: "GET",
+      headers: {
+        "Content-Type": "application/json",
+        Authorization: `Bearer ${token}`,
+      },
+    })
+      .then((response) => response.json())
+      .then((data) => {
+        setCartItems(data);
+      })
+      .catch((error) => {
+        console.error("Ошибка при добавлении элемента в корзину: ", error);
+      });
+  } ,[]);
+
+
 
   const handleBidChange = (e) => {
     setBidAmount(e.target.value);

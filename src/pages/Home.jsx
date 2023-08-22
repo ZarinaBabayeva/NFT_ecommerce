@@ -4,7 +4,6 @@ import CollectionCard from "../components/Collection Card";
 import ArtistsCard from "../components/Artists Card";
 import CategoryCard from "../components/Category Card";
 import NFTCard from "../components/NFT Card";
-//import GIF from "/Users/user/Desktop/front/public/media/GIF.gif";
 import Auction from "../components/Auction";
 import Loading from "../components/Loading";
 
@@ -18,7 +17,7 @@ function Home() {
   let totalSales = artists
     .map((artist) => artist.solds)
     .reduce((sum, a) => sum + a, 0);
-  useEffect(() => {
+ useEffect(() => {
     fetch("http://127.0.0.1:8000/accounts/users_list/")
       .then((response) => response.json())
       .then((json) => {
@@ -108,7 +107,7 @@ function Home() {
             </div>
             <div className="hero_gif">
               <Link to="/artist">
-                <img src={GIF} alt="" />
+                <img src= "https://fiverr-res.cloudinary.com/images/q_auto,f_auto/gigs/300528436/original/12054821d6a4d2fdccae18bcd800f148195fa2ad/make-exotic-ai-art-using-midjourney-dall-e-stable-diffusion.png" alt=""/>
               </Link>
             </div>
           </div>

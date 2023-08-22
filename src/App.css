@@ -289,6 +289,7 @@ footer {
 .hero_gif a img {
   width: 100%;
   height: 100%;
+  border-radius: 50px;
   object-fit: contain;
 }
 .additional_info {
@@ -593,7 +594,8 @@ footer {
 .trash {
   position: absolute;
   right: 0;
-  bottom: 100px;
+  bottom: 70px;
+  color: red;
   padding: 10px 12px;
 }
 /* Placeholder */

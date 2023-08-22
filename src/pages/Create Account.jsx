@@ -39,6 +39,7 @@ function CreateAccount() {
         console.log(response);
         if (response.ok) {
           console.log("User created successfully!");
+          
           navigate('/');
         } else {
           console.error("User creation failed!");
