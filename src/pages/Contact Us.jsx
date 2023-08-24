@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-//import axios from 'axios' 
+//import axios from 'axios'
 
 const ContactUs = () => {
   const [name, setName] = useState("");
@@ -20,6 +20,19 @@ const ContactUs = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
+    fetch("http://localhost:8000/nfts/send-mail", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        name: name,
+        email: email,
+        message: message,
+      }),
+    })
+      .then((response) => response.json)
+      .then((data) => console.log(data));
 
     // Reset form
     setName("");
@@ -52,7 +65,12 @@ const ContactUs = () => {
               </address>
             </div>
             <div className="d-flex align-items-center">
-              <form className="contact__form" action="contact/" method  = "POST" onSubmit={handleSubmit}>
+              <form
+                className="contact__form"
+                action="contact/"
+                method="POST"
+                onSubmit={handleSubmit}
+              >
                 <div className="row">
                   <div className="col-lg-6 form-group">
                     <input

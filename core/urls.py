@@ -7,11 +7,12 @@ from django.conf.urls.static import static
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', TemplateView.as_view(template_name="base.html")),
-    # re_path(r'^(?P<path>.*)/$', TemplateView.as_view(template_name='base.html')),
+    path('', TemplateView.as_view(template_name="base.html")),  
     path('nfts/', include('nfts.urls')),
     path('accounts/', include('accounts.urls')),
-    #url(r'^auth/', include('djoser.urls')),
+    path('auth/', include('djoser.urls')),
+    path('auth/', include('djoser.urls.jwt')),
 ]
 
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+urlpatterns += [re_path(r'^(?P<path>.*)/$', TemplateView.as_view(template_name='base.html'))]

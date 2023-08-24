@@ -82,6 +82,7 @@ class CartItemView(APIView):
     def post(self, request):
         nft_id = request.data.get("nft_id")
         quantity = request.data.get("quantity", 1)
+      
 
         try:
             nft = NFT.objects.get(pk=nft_id)
@@ -103,33 +104,61 @@ class CartItemView(APIView):
         except CartItem.DoesNotExist:
             return Response({"message": "Item not found in cart."}, status=status.HTTP_404_NOT_FOUND)
         
+class FavoritesView(APIView):
+    def get(self, request):
+        favorite = Favorite.objects.filter(user=request.user)
+        serializer = FavoriteSerializer(favorite, many=True)
+        return Response(serializer.data, status=status.HTTP_200_OK)
+
+    def post(self, request):
+        nft_id = request.data.get("nft_id")
+        quantity = request.data.get("quantity", 1)
+
+        try:
+            nft = NFT.objects.get(pk=nft_id)
+        except NFT.DoesNotExist:
+            return Response({"message": "NFT not found."}, status=status.HTTP_404_NOT_FOUND)
+
+        favorite, created = Favorite.objects.get_or_create(user=request.user, nft=nft)
+        favorite.quantity += quantity
+        favorite.save()
+
+        serializer =FavoriteSerializer(favorite)
+        return Response(serializer.data, status=status.HTTP_201_CREATED)
+
+    def delete(self, request, nft_id):
+        try:
+            favorite = Favorite.objects.get(user=request.user, nft__id=nft_id)
+            favorite.delete()
+            return Response({"message": "Item removed from favorite."}, status=status.HTTP_204_NO_CONTENT)
+        except Favorite.DoesNotExist:
+            return Response({"message": "Item not found in favorite."}, status=status.HTTP_404_NOT_FOUND)
 
 
 
 class EmailAPI(APIView):
-    def contact_page(request):
-        if request.method == "POST":
-            name = request.POST.get['name'] 
-            email = request.POST.get['email']
-            message = request.POST.get['message']
+    def post(self,request):
+            name = request.data.get['name'] 
+            email = request.data.get['email']
+            message = request.data.get['message']
 
-        if name is None and email is None and message  is None:
-            return Response({'message': 'There must be a name and email or message'}, status=200)
-        elif name is None and email is None:
-            return Response({'message': 'Name and email are required.'}, status=200)
-        elif email  is None:
-            return Response({'message': 'Email required.'}, status=200)
-        elif message is None:
-            return Response({'message': 'Message required.'}, status=200)
-        else:
-            send_mail(
+            if name is None and email is None and message  is None:
+                return Response({'message': 'There must be a name, email or message'}, status=400)
+            elif email  is None:
+                return Response({'message': 'Email is required.'}, status=400)
+            elif message is None:
+                return Response({'message': 'Message is required.'}, status=400)
+            else:
+                Contact.objects.create(name=name, email=email, message=message)
+                
+                send_mail(
                 name,
                 message,
                 settings.EMAIL_HOST_USER, 
                 ['nftwebsite23@outlook.com'],
-                fail_silently=False,
-            )
+                fail_silently=False,)
+            
 
-            return HttpResponse("<h1> Your message successfully sent </h1>")
+            return Response("Success", status=status.HTTP_200_OK)
       
       

@@ -30,11 +30,19 @@ class NFT(models.Model):
 class CartItem(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     nft = models.ForeignKey(NFT, on_delete=models.CASCADE)
-    quantity = models.PositiveIntegerField(default=1)
+    quantity = models.PositiveIntegerField(default=0)
     added_at = models.DateTimeField(auto_now_add=True)
+  
 
     def __str__(self):
         return f"{self.user.username} - {self.nft.name} x {self.quantity}"
+    
+class Favorite(models.Model):
+    nft = models.ForeignKey(NFT, on_delete=models.CASCADE)
+    user = models.ForeignKey (User, on_delete=models.CASCADE)
+
+    def __str__(self):
+        return self.nft.name
     
 class Contact(models.Model):
     name = models.CharField(max_length=250)
@@ -43,3 +51,5 @@ class Contact(models.Model):
     
     def __str__(self):
         return self.name
+
+

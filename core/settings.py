@@ -156,6 +156,9 @@ CORS_ALLOWED_ORIGINS = [
 ]
 
 REST_FRAMEWORK = {
+    'DEFAULT_PERMISSIONS_CLASSES': [
+        'rest_framework.permissions.IsAuthenticated',
+    ],
     'DEFAULT_AUTHENTICATION_CLASSES': [
         'rest_framework_simplejwt.authentication.JWTAuthentication',
         'rest_framework.authentication.BasicAuthentication',
@@ -181,11 +184,29 @@ SIMPLE_JWT = {
 }
 
 #email settings
-EMAIL_BACKEND = 'django.core.mail.backends.smp.EmailBackend'
-EMAIL_HOST = 'ssmtp-mail.outlook.com'
-EMAIL_PORT = '25'
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp-mail.outlook.com'
+EMAIL_PORT = '587'
 EMAIL_HOST_USER = 'nftwebsite23@outlook.com'
 EMAIL_HOST_PASSWORD = 'nftMarket23'
 EMAIL_USE_TLS = True
 EMAIL_TIMEOUT = 300
 
+DJOSER = {
+    'LOGIN_FIELD':'EMAIL',
+    'USER_CREATE_PASSWORD_RETYPE': True,
+    'USERNAME_CHANGED_EMAIL_CONFIRMATION': True,
+    'PASSWORD_CHANGED_EMAIL_CONFIRMATION': True,
+    'SEND_CONFIRMATION_EMAIL': True,
+    'SET_PASSWORD_RETYPE': True,
+    'SET_USERNAME_RETYPE': True,
+    'PASSWORD_RESET_CONFIRM_RETYPE': 'password/reset/confirm/{uid}/{token}',
+    'USERNAME_RESET_CONFIRM_RETYPE': 'email/reset/confirm/{uid}/{token}',
+    'ACTIVATION_URL': 'activate/{uid}/{token}',
+    'SEND_ACTIVATION_EMAIL': True,
+    'SERILAZERS':{
+        'user_register': 'accounts.serilazers.RegisterSerilazer',
+        'user': 'accounts.serilazers.RegisterSerilazer',
+        'user_delete': 'djoser.serilazers.UserDeleteSerilazer',
+    }
+}

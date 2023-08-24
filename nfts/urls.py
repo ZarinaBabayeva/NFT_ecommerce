@@ -12,5 +12,7 @@ urlpatterns = [
     path('nft/<int:nft_id>/end_auction/', EndAuctionView.as_view(), name='end-auction'),
     path("cart/", CartItemView.as_view(), name="cart"),
     path("cart/<int:nft_id>/", CartItemView.as_view(), name="cart-item"),
-    url('send-email', EmailAPI.as_view()),
+    path("favorites/", FavoritesView.as_view(), name="favorites"),
+    path("favorites/<int:nft_id>/", FavoritesView.as_view(), name="favorites"),
+    url("send-email/", EmailAPI.as_view(), name="contact us"),
 ]

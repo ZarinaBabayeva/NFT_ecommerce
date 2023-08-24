@@ -61,7 +61,7 @@ function NFTCard({ artist, nft }) {
           "Content-Type": "application/json",
           Authorization: `Bearer ${localStorage.getItem("token")}`, // Передаем токен аутентификации
         },
-        body: JSON.stringify({ nft_id: nft.id, quantity: 1 }),
+        body: JSON.stringify({ nft_id: nft.id, quantity: 1, nft_image: nft.image, nft_name: nft.name}),
       })
         .then((response) => response.json())
         .then((data) => {
@@ -75,6 +75,29 @@ function NFTCard({ artist, nft }) {
   };
 
   const handleAddToFavorites = () => {
+    if (user) {
+      setIsAddedToFavorites(true);
+      fetch(`http://127.0.0.1:8000/nfts/favorite/`, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Authorization: `Bearer ${localStorage.getItem("token")}`, // Передаем токен аутентификации
+        },
+        body: JSON.stringify({ nft_id: nft.id, quantity: 1, nft_image: nft.image}),
+      })
+        .then((response) => response.json())
+        .then((data) => {
+          console.log(data); // Здесь вы можете обработать ответ от сервера после успешного добавления в корзину
+          // Если требуется обновить список элементов в корзине, можете сделать это здесь
+        })
+        .catch((error) => {
+          console.error("Ошибка при добавлении в корзину: ", error);
+        });
+    }
+  };
+
+
+  /*const handleAddToFavorites = () => {
     if (user) {
       setIsAddedToFavorites(true);
       setFavoriteItems((prevItems) => {
@@ -98,7 +121,7 @@ function NFTCard({ artist, nft }) {
       });
     }
   };
-
+*/
   const handleAddToCollection = () => {
     setIsAddingToCollection(true);
     setSelectedCollection(null);
@@ -192,7 +215,7 @@ function NFTCard({ artist, nft }) {
     <div className="card">
       <Link to={`/nft/${nft.id}`} className="nft_card home-card">
         <div className="nft_card_image">
-          <img src={nft.image} alt="" />
+          <img src={nft.image} alt="image" />
         </div>
         <div className="nft_card_info">
           <div className="artist_info">

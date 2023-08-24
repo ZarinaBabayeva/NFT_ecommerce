@@ -28,6 +28,11 @@ class CartItemSerializer(serializers.ModelSerializer):
         model = CartItem
         fields = "__all__"
 
+class FavoriteSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Favorite
+        fields = "__all__"
+
 class ContactSerializer(serializers.ModelSerializer):
     class Meta:
         model = Contact

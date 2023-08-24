@@ -36,12 +36,12 @@ function Header({ isSignedIn }) {
           <>
             <NavLink to="/favorite">Favorites</NavLink>
             <NavLink to="/cart">Card</NavLink>
-            <NavLink to="/collection">Collection</NavLink>
-            <NavLink to="/about">About</NavLink>
+            <NavLink to="/collection">Collection</NavLink>  
             <NavLink to="/blog">Blog</NavLink>
           </>
         )}
         <NavLink to="/contactUs">Contact Us</NavLink>
+        <NavLink to="/about">About</NavLink>
         <NavLink to="/connectWallet">Connect a wallet</NavLink>
         <NavLink to="/profile">Profile</NavLink>
         {user ? (
